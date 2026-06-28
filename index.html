@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mise 食序是一款本地优先的智能厨房 App，将库存、菜谱、做饭和购物连成一个完整流程。"
+    />
+    <meta name="theme-color" content="#151817" />
+    <meta property="og:title" content="Mise 食序" />
+    <meta
+      property="og:description"
+      content="Inventory, recipes, cooking, and shopping — one connected kitchen workflow."
+    />
+    <meta property="og:image" content="assets/inventory.png" />
+    <title>Mise 食序 — 智能厨房工作流</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">跳到主要内容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Mise 食序首页">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="utensils"></i></span>
+        <span>Mise <b>食序</b></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features" data-i18n="navFeatures">功能</a>
+        <a href="#workflow" data-i18n="navWorkflow">工作流</a>
+        <a href="#privacy" data-i18n="navPrivacy">隐私</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+          <i data-lucide="languages" aria-hidden="true"></i>
+          <span id="languageLabel">EN</span>
+        </button>
+        <a
+          class="icon-link"
+          href="https://github.com/zyfeleven/smartKitchen"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          title="GitHub"
+        >
+          <i data-lucide="github" aria-hidden="true"></i>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-media" aria-hidden="true">
+          <div class="phone phone-main"><img src="assets/inventory.png" alt="" /></div>
+          <div class="phone phone-side"><img src="assets/recipes.png" alt="" /></div>
+          <div class="hero-shape shape-green"></div>
+          <div class="hero-shape shape-coral"></div>
+        </div>
+        <div class="hero-content reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">本地优先的智能厨房</p>
+          <h1>Mise <span>食序</span></h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            把库存、菜谱、做饭和购物连成一个清晰、可控的厨房工作流。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#features">
+              <span data-i18n="explore">探索功能</span>
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+            <a
+              class="button button-quiet"
+              href="https://github.com/zyfeleven/smartKitchen"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i data-lucide="github" aria-hidden="true"></i>
+              <span data-i18n="viewSource">查看源代码</span>
+            </a>
+          </div>
+          <div class="hero-proof" aria-label="Product principles">
+            <span><i data-lucide="database" aria-hidden="true"></i><b data-i18n="proofLocal">本地数据</b></span>
+            <span><i data-lucide="languages" aria-hidden="true"></i><b data-i18n="proofBilingual">中英双语</b></span>
+            <span><i data-lucide="shield-check" aria-hidden="true"></i><b data-i18n="proofConfirm">操作前确认</b></span>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#overview" aria-label="Scroll to overview">
+          <span data-i18n="scroll">向下浏览</span>
+          <i data-lucide="arrow-down" aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <section class="overview section" id="overview">
+        <div class="section-inner overview-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow dark" data-i18n="overviewEyebrow">一个闭环，而不是五个孤立工具</p>
+            <h2 data-i18n="overviewTitle">知道有什么，决定做什么，只买真正缺的。</h2>
+          </div>
+          <div class="overview-copy reveal">
+            <p data-i18n="overviewCopy">
+              Mise 让每次入库、做饭和采购都共享同一份上下文。批次、保质期、菜谱用量和购物缺口彼此关联，同时保留最终确认权。
+            </p>
+            <dl class="product-stats">
+              <div><dt>5</dt><dd data-i18n="statFlows">个核心流程</dd></div>
+              <div><dt>2</dt><dd data-i18n="statLanguages">种界面语言</dd></div>
+              <div><dt>1</dt><dd data-i18n="statDatabase">个本地数据源</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section section" id="features">
+        <div class="section-inner">
+          <div class="feature-row reveal">
+            <div class="feature-copy">
+              <span class="feature-number">01</span>
+              <p class="eyebrow dark" data-i18n="inventoryEyebrow">批次化库存</p>
+              <h2 data-i18n="inventoryTitle">同一种食材，也保留每一批的差异。</h2>
+              <p data-i18n="inventoryCopy">
+                数量累加而不是覆盖。每批食材独立记录购买日期、过期日期、位置和状态，临期提醒与库存搜索直接可用。
+              </p>
+              <ul class="feature-list">
+                <li><i data-lucide="layers-3"></i><span data-i18n="inventoryPoint1">独立库存批次与保质期</span></li>
+                <li><i data-lucide="map-pin"></i><span data-i18n="inventoryPoint2">按位置、分类与临期状态筛选</span></li>
+                <li><i data-lucide="list-checks"></i><span data-i18n="inventoryPoint3">批量管理、移动和删除</span></li>
+              </ul>
+            </div>
+            <figure class="app-shot app-shot-inventory">
+              <img src="assets/inventory.png" alt="Mise inventory screen" data-i18n-alt="inventoryAlt" />
+            </figure>
+          </div>
+
+          <div class="feature-row reverse reveal">
+            <div class="feature-copy">
+              <span class="feature-number">02</span>
+              <p class="eyebrow dark" data-i18n="inboundEyebrow">智能入库</p>
+              <h2 data-i18n="inboundTitle">拍照、说话或输入，先识别，再由你确认。</h2>
+              <p data-i18n="inboundCopy">
+                AI 把自然语言和照片整理成可编辑字段，推荐分类、位置和保质期。识别失败时仍可回到完整手动表单。
+              </p>
+              <ul class="feature-list">
+                <li><i data-lucide="camera"></i><span data-i18n="inboundPoint1">照片、文字和组合输入</span></li>
+                <li><i data-lucide="mic"></i><span data-i18n="inboundPoint2">语音转文字</span></li>
+                <li><i data-lucide="check-circle-2"></i><span data-i18n="inboundPoint3">AI 只预填，不自动写入</span></li>
+              </ul>
+            </div>
+            <figure class="app-shot app-shot-inbound">
+              <img src="assets/inbound.png" alt="Mise smart inbound sheet" data-i18n-alt="inboundAlt" />
+            </figure>
+          </div>
+
+          <div class="feature-row reveal">
+            <div class="feature-copy">
+              <span class="feature-number">03</span>
+              <p class="eyebrow dark" data-i18n="recipeEyebrow">菜谱与做饭</p>
+              <h2 data-i18n="recipeTitle">菜谱独立保存，做饭时再核对库存变化。</h2>
+              <p data-i18n="recipeCopy">
+                通过标签和搜索快速找到菜谱，调整份数后查看建议扣减。库存食材删除不会破坏菜谱，做饭记录也可追溯。
+              </p>
+              <ul class="feature-list">
+                <li><i data-lucide="book-open"></i><span data-i18n="recipePoint1">可编辑的食材、步骤与标签</span></li>
+                <li><i data-lucide="search"></i><span data-i18n="recipePoint2">标签筛选、搜索与批量管理</span></li>
+                <li><i data-lucide="chef-hat"></i><span data-i18n="recipePoint3">份数换算、库存预览与做饭历史</span></li>
+              </ul>
+            </div>
+            <div class="dual-shots" aria-label="Recipe and cooking screens">
+              <figure class="app-shot compact"><img src="assets/recipes.png" alt="Mise recipes screen" data-i18n-alt="recipesAlt" /></figure>
+              <figure class="app-shot compact offset"><img src="assets/cook.png" alt="Mise cooking screen" data-i18n-alt="cookAlt" /></figure>
+            </div>
+          </div>
+
+          <div class="feature-row reverse reveal">
+            <div class="feature-copy">
+              <span class="feature-number">04</span>
+              <p class="eyebrow dark" data-i18n="shoppingEyebrow">购物闭环</p>
+              <h2 data-i18n="shoppingTitle">从菜谱计算缺口，买完直接回填库存。</h2>
+              <p data-i18n="shoppingCopy">
+                选择多个菜谱后，清单会扣除现有库存，只保留真正需要购买的数量。完成采购后可将已买项目重新入库。
+              </p>
+              <ul class="feature-list">
+                <li><i data-lucide="calculator"></i><span data-i18n="shoppingPoint1">基于库存计算采购缺口</span></li>
+                <li><i data-lucide="shopping-cart"></i><span data-i18n="shoppingPoint2">按卖场区域分组并勾选</span></li>
+                <li><i data-lucide="package-check"></i><span data-i18n="shoppingPoint3">一键回填已购买食材</span></li>
+              </ul>
+            </div>
+            <figure class="app-shot app-shot-shopping">
+              <img src="assets/shopping.png" alt="Mise shopping screen" data-i18n-alt="shoppingAlt" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow section" id="workflow">
+        <div class="section-inner">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow" data-i18n="workflowEyebrow">从入库到下一次采购</p>
+            <h2 data-i18n="workflowTitle">每一步都让下一步更简单。</h2>
+          </div>
+          <ol class="workflow-steps">
+            <li class="reveal"><i data-lucide="scan-line"></i><b data-i18n="step1Title">入库</b><span data-i18n="step1Copy">记录批次与日期</span></li>
+            <li class="reveal"><i data-lucide="book-open"></i><b data-i18n="step2Title">选菜谱</b><span data-i18n="step2Copy">按标签快速筛选</span></li>
+            <li class="reveal"><i data-lucide="chef-hat"></i><b data-i18n="step3Title">做饭</b><span data-i18n="step3Copy">确认库存扣减</span></li>
+            <li class="reveal"><i data-lucide="shopping-basket"></i><b data-i18n="step4Title">采购</b><span data-i18n="step4Copy">只买缺少的数量</span></li>
+            <li class="reveal"><i data-lucide="rotate-ccw"></i><b data-i18n="step5Title">回填</b><span data-i18n="step5Copy">让库存重新准确</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="privacy section" id="privacy">
+        <div class="section-inner privacy-grid">
+          <div class="privacy-copy reveal">
+            <p class="eyebrow dark" data-i18n="privacyEyebrow">隐私与可控性</p>
+            <h2 data-i18n="privacyTitle">你的厨房数据，默认留在你的设备上。</h2>
+            <p data-i18n="privacyCopy">
+              库存、菜谱、购物清单和做饭记录保存在本地 SQLite。后端不保存业务数据，只在需要 AI 识别时处理请求；API 密钥也不会打包进 App。
+            </p>
+            <a class="text-link" href="https://github.com/zyfeleven/smartKitchen" target="_blank" rel="noreferrer">
+              <span data-i18n="inspectSource">在 GitHub 检查实现</span><i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="principles reveal">
+            <article><i data-lucide="hard-drive"></i><div><h3 data-i18n="localTitle">本地优先</h3><p data-i18n="localCopy">核心业务数据保存在设备 SQLite 中。</p></div></article>
+            <article><i data-lucide="server-cog"></i><div><h3 data-i18n="backendTitle">无状态后端</h3><p data-i18n="backendCopy">后端只代理 AI 请求，不维护厨房数据库。</p></div></article>
+            <article><i data-lucide="mouse-pointer-click"></i><div><h3 data-i18n="controlTitle">用户确认</h3><p data-i18n="controlCopy">AI 输出始终先进入可编辑预览。</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing section">
+        <div class="section-inner closing-inner reveal">
+          <div>
+            <p class="eyebrow" data-i18n="closingEyebrow">Mise · 食序</p>
+            <h2 data-i18n="closingTitle">让厨房信息保持有序，让决定变得更轻松。</h2>
+          </div>
+          <a class="button button-primary light" href="https://github.com/zyfeleven/smartKitchen" target="_blank" rel="noreferrer">
+            <i data-lucide="github"></i><span data-i18n="viewProject">查看项目</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark"><i data-lucide="utensils"></i></span><span>Mise <b>食序</b></span></a>
+      <p data-i18n="footerCopy">为更清晰的日常厨房流程而构建。</p>
+      <p>© <span id="year"></span> Mise</p>
+    </footer>
+  </body>
+</html>
