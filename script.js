@@ -2,7 +2,7 @@ const translations = {
   zh: {
     skip: "跳到主要内容", navFeatures: "功能", navWorkflow: "工作流", navPrivacy: "隐私",
     heroEyebrow: "本地优先的智能厨房", heroCopy: "把库存、菜谱、做饭和购物连成一个清晰、可控的厨房工作流。",
-    explore: "探索功能", viewSource: "查看源代码", proofLocal: "本地数据", proofBilingual: "中英双语", proofConfirm: "操作前确认", scroll: "向下浏览",
+    explore: "探索功能", comingSoon: "即将上线", proofLocal: "本地数据", proofBilingual: "中英双语", proofConfirm: "操作前确认", scroll: "向下浏览",
     overviewEyebrow: "一个闭环，而不是五个孤立工具", overviewTitle: "知道有什么，决定做什么，只买真正缺的。",
     overviewCopy: "Mise 让每次入库、做饭和采购都共享同一份上下文。批次、保质期、菜谱用量和购物缺口彼此关联，同时保留最终确认权。",
     statFlows: "个核心流程", statLanguages: "种界面语言", statDatabase: "个本地数据源",
@@ -22,14 +22,14 @@ const translations = {
     step1Title: "入库", step1Copy: "记录批次与日期", step2Title: "选菜谱", step2Copy: "按标签快速筛选", step3Title: "做饭", step3Copy: "确认库存扣减", step4Title: "采购", step4Copy: "只买缺少的数量", step5Title: "回填", step5Copy: "让库存重新准确",
     privacyEyebrow: "隐私与可控性", privacyTitle: "你的厨房数据，默认留在你的设备上。",
     privacyCopy: "库存、菜谱、购物清单和做饭记录保存在本地 SQLite。后端不保存业务数据，只在需要 AI 识别时处理请求；API 密钥也不会打包进 App。",
-    inspectSource: "在 GitHub 检查实现", localTitle: "本地优先", localCopy: "核心业务数据保存在设备 SQLite 中。", backendTitle: "无状态后端", backendCopy: "后端只代理 AI 请求，不维护厨房数据库。", controlTitle: "用户确认", controlCopy: "AI 输出始终先进入可编辑预览。",
-    closingEyebrow: "Mise · 食序", closingTitle: "让厨房信息保持有序，让决定变得更轻松。", viewProject: "查看项目", footerCopy: "为更清晰的日常厨房流程而构建。",
+    localTitle: "本地优先", localCopy: "核心业务数据保存在设备 SQLite 中。", backendTitle: "无状态后端", backendCopy: "后端只代理 AI 请求，不维护厨房数据库。", controlTitle: "用户确认", controlCopy: "AI 输出始终先进入可编辑预览。",
+    closingEyebrow: "Mise · 食序", closingTitle: "让厨房信息保持有序，让决定变得更轻松。", footerCopy: "为更清晰的日常厨房流程而构建。",
     inventoryAlt: "Mise 库存界面", inboundAlt: "Mise 智能入库弹窗", recipesAlt: "Mise 菜谱界面", cookAlt: "Mise 做饭界面", shoppingAlt: "Mise 购物界面"
   },
   en: {
     skip: "Skip to main content", navFeatures: "Features", navWorkflow: "Workflow", navPrivacy: "Privacy",
     heroEyebrow: "A local-first smart kitchen", heroCopy: "Connect inventory, recipes, cooking, and shopping in one clear, controlled kitchen workflow.",
-    explore: "Explore features", viewSource: "View source", proofLocal: "Local data", proofBilingual: "Bilingual", proofConfirm: "Confirm before action", scroll: "Scroll to explore",
+    explore: "Explore features", comingSoon: "Coming soon", proofLocal: "Local data", proofBilingual: "Bilingual", proofConfirm: "Confirm before action", scroll: "Scroll to explore",
     overviewEyebrow: "One loop, not five disconnected tools", overviewTitle: "Know what you have. Decide what to cook. Buy only what is missing.",
     overviewCopy: "Mise gives every inbound item, meal, and shopping trip the same context. Batches, expiry dates, recipe quantities, and shopping gaps stay connected while you retain final control.",
     statFlows: "core flows", statLanguages: "interface languages", statDatabase: "local source of truth",
@@ -49,8 +49,8 @@ const translations = {
     step1Title: "Add stock", step1Copy: "Record batches and dates", step2Title: "Pick recipes", step2Copy: "Filter quickly by tag", step3Title: "Cook", step3Copy: "Confirm inventory use", step4Title: "Shop", step4Copy: "Buy only the gap", step5Title: "Restock", step5Copy: "Keep inventory accurate",
     privacyEyebrow: "Privacy and control", privacyTitle: "Your kitchen data stays on your device by default.",
     privacyCopy: "Inventory, recipes, shopping lists, and cooking history live in local SQLite. The backend stores no business data and handles requests only when AI recognition is needed. API keys are never bundled in the app.",
-    inspectSource: "Inspect the implementation on GitHub", localTitle: "Local first", localCopy: "Core business data lives in SQLite on the device.", backendTitle: "Stateless backend", backendCopy: "The backend proxies AI requests without a kitchen database.", controlTitle: "User confirmation", controlCopy: "AI output always enters an editable preview first.",
-    closingEyebrow: "Mise · 食序", closingTitle: "Keep kitchen information ordered and everyday decisions lighter.", viewProject: "View project", footerCopy: "Built for a clearer everyday kitchen workflow.",
+    localTitle: "Local first", localCopy: "Core business data lives in SQLite on the device.", backendTitle: "Stateless backend", backendCopy: "The backend proxies AI requests without a kitchen database.", controlTitle: "User confirmation", controlCopy: "AI output always enters an editable preview first.",
+    closingEyebrow: "Mise · 食序", closingTitle: "Keep kitchen information ordered and everyday decisions lighter.", footerCopy: "Built for a clearer everyday kitchen workflow.",
     inventoryAlt: "Mise inventory screen", inboundAlt: "Mise smart inbound sheet", recipesAlt: "Mise recipes screen", cookAlt: "Mise cooking screen", shoppingAlt: "Mise shopping screen"
   }
 };
@@ -70,6 +70,10 @@ function applyLanguage(nextLanguage) {
   document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
     const value = translations[language][element.dataset.i18nAlt];
     if (value) element.alt = value;
+  });
+  document.querySelectorAll("[data-app-image]").forEach((image) => {
+    const suffix = language === "en" ? "-en" : "";
+    image.src = `assets/${image.dataset.appImage}${suffix}.png`;
   });
   label.textContent = language === "zh" ? "EN" : "中文";
   toggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换到中文");

@@ -85,6 +85,13 @@ button { font: inherit; }
 .button-primary { color: white; background: var(--green); }
 .button-primary:hover { background: #278967; }
 .button-quiet { color: white; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); }
+.store-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.download-button { min-width: 142px; min-height: 52px; justify-content: flex-start; color: white; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); }
+.download-button > span { display: grid; text-align: left; line-height: 1.1; }
+.download-button b { font-size: 14px; }
+.download-button small { margin-top: 4px; color: #bfc8c3; font-size: 10px; font-weight: 650; }
+.download-button:disabled { cursor: default; opacity: .74; }
+.download-button:disabled:hover { transform: none; }
 .hero-proof { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 44px; color: #c8d0cc; font-size: 13px; }
 .hero-proof span { display: flex; align-items: center; gap: 7px; }
 .hero-proof svg { width: 16px; color: var(--yellow); }
@@ -153,7 +160,9 @@ button { font: inherit; }
 .closing-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 50px; }
 .closing h2 { max-width: 860px; }
 .closing .eyebrow { color: #34120c; }
-.button.light { flex: 0 0 auto; color: var(--ink); background: white; }
+.download-button.light { color: var(--ink); background: white; border-color: transparent; }
+.download-button.light small { color: #5e6863; }
+.closing-downloads { flex: 0 0 auto; justify-content: flex-end; }
 
 footer { min-height: 150px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding: 36px max(22px, calc((100vw - var(--max)) / 2)); color: #aeb8b3; background: var(--ink); font-size: 13px; }
 footer > :last-child { justify-self: end; }
@@ -188,6 +197,8 @@ footer > :last-child { justify-self: end; }
   .hero h1 { font-size: 68px; }
   .hero-copy { max-width: 330px; font-size: 17px; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions .store-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; max-width: 340px; }
+  .download-button { min-width: 0; width: 100%; padding: 0 13px; }
   .hero-proof { max-width: 260px; gap: 10px 16px; }
   .phone-main { width: 330px; height: 714px; right: -165px; top: 74px; opacity: .34; }
   .shape-green { right: -40px; top: 70%; width: 120px; height: 120px; }
@@ -206,6 +217,7 @@ footer > :last-child { justify-self: end; }
   .app-shot.compact.offset { margin-top: 100px; }
   .workflow-steps { margin: 0 -16px; border-left: 0; border-right: 0; }
   .principles article { grid-template-columns: 36px 1fr; padding: 18px; }
+  .closing-downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; max-width: 340px; }
   footer { padding: 36px 16px; }
 }
 
