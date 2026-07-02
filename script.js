@@ -2,7 +2,7 @@ const translations = {
   zh: {
     skip: "跳到主要内容", navFeatures: "功能", navWorkflow: "工作流", navPrivacy: "隐私",
     heroEyebrow: "本地优先的智能厨房", heroCopy: "把库存、菜谱、做饭和购物连成一个清晰、可控的厨房工作流。",
-    explore: "探索功能", comingSoon: "即将上线", proofLocal: "本地数据", proofBilingual: "中英双语", proofConfirm: "操作前确认", scroll: "向下浏览",
+    explore: "探索功能", comingSoon: "即将上线", downloadApk: "下载 APK · 65 MB", proofLocal: "本地数据", proofBilingual: "中英双语", proofConfirm: "操作前确认", scroll: "向下浏览",
     overviewEyebrow: "一个闭环，而不是五个孤立工具", overviewTitle: "知道有什么，决定做什么，只买真正缺的。",
     overviewCopy: "Mise 让每次入库、做饭和采购都共享同一份上下文。批次、保质期、菜谱用量和购物缺口彼此关联，同时保留最终确认权。",
     statFlows: "个核心流程", statLanguages: "种界面语言", statDatabase: "个本地数据源",
@@ -29,7 +29,7 @@ const translations = {
   en: {
     skip: "Skip to main content", navFeatures: "Features", navWorkflow: "Workflow", navPrivacy: "Privacy",
     heroEyebrow: "A local-first smart kitchen", heroCopy: "Connect inventory, recipes, cooking, and shopping in one clear, controlled kitchen workflow.",
-    explore: "Explore features", comingSoon: "Coming soon", proofLocal: "Local data", proofBilingual: "Bilingual", proofConfirm: "Confirm before action", scroll: "Scroll to explore",
+    explore: "Explore features", comingSoon: "Coming soon", downloadApk: "Download APK · 65 MB", proofLocal: "Local data", proofBilingual: "Bilingual", proofConfirm: "Confirm before action", scroll: "Scroll to explore",
     overviewEyebrow: "One loop, not five disconnected tools", overviewTitle: "Know what you have. Decide what to cook. Buy only what is missing.",
     overviewCopy: "Mise gives every inbound item, meal, and shopping trip the same context. Batches, expiry dates, recipe quantities, and shopping gaps stay connected while you retain final control.",
     statFlows: "core flows", statLanguages: "interface languages", statDatabase: "local source of truth",
