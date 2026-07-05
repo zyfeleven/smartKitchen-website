@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Mise 食序是一款本地优先的智能厨房 App，将库存、菜谱、做饭和购物连成一个完整流程。"
+      content="Mise 食序：库存、菜谱、做饭、购物都在一个 App 里，数据留在你自己手机上。"
     />
     <meta name="theme-color" content="#151817" />
     <meta property="og:title" content="Mise 食序" />
     <meta
       property="og:description"
-      content="Inventory, recipes, cooking, and shopping — one connected kitchen workflow."
+      content="Inventory, recipes, cooking, and shopping, all in one app — and it all stays on your phone."
     />
     <meta property="og:image" content="assets/inventory.png" />
-    <title>Mise 食序 — 智能厨房工作流</title>
+    <title>Mise 食序 — 知道冰箱里有什么</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.js" defer></script>
     <script src="script.js" defer></script>
@@ -52,10 +52,10 @@
           <div class="hero-shape shape-coral"></div>
         </div>
         <div class="hero-content reveal">
-          <p class="eyebrow" data-i18n="heroEyebrow">本地优先的智能厨房</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">手机里的厨房小助手</p>
           <h1>Mise <span>食序</span></h1>
           <p class="hero-copy" data-i18n="heroCopy">
-            把库存、菜谱、做饭和购物连成一个清晰、可控的厨房工作流。
+            记录库存、翻看菜谱、做饭时核对用量、缺什么就添到购物单——都在一个 App 里，不用来回切换。
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#features">
@@ -92,17 +92,17 @@
       <section class="overview section" id="overview">
         <div class="section-inner overview-grid">
           <div class="section-heading reveal">
-            <p class="eyebrow dark" data-i18n="overviewEyebrow">一个闭环，而不是五个孤立工具</p>
-            <h2 data-i18n="overviewTitle">知道有什么，决定做什么，只买真正缺的。</h2>
+            <p class="eyebrow dark" data-i18n="overviewEyebrow">库存、菜谱、购物，本来就该是一回事</p>
+            <h2 data-i18n="overviewTitle">先看看家里还有什么，再决定今天吃什么，购物单会自己排除已经有的。</h2>
           </div>
           <div class="overview-copy reveal">
             <p data-i18n="overviewCopy">
-              Mise 让每次入库、做饭和采购都共享同一份上下文。批次、保质期、菜谱用量和购物缺口彼此关联，同时保留最终确认权。
+              入库、做饭、买菜这几件事，在 Mise 里是互相通的：这批食材什么时候过期、这道菜要用多少、购物单上还缺什么，都对得上号——但要不要这么做，还是你说了算。
             </p>
             <dl class="product-stats">
-              <div><dt>5</dt><dd data-i18n="statFlows">个核心流程</dd></div>
-              <div><dt>2</dt><dd data-i18n="statLanguages">种界面语言</dd></div>
-              <div><dt>1</dt><dd data-i18n="statDatabase">个本地数据源</dd></div>
+              <div><dt>5</dt><dd data-i18n="statFlows">个环节</dd></div>
+              <div><dt>2</dt><dd data-i18n="statLanguages">种语言</dd></div>
+              <div><dt>1</dt><dd data-i18n="statDatabase">部手机就够</dd></div>
             </dl>
           </div>
         </div>
@@ -113,10 +113,10 @@
           <div class="feature-row reveal">
             <div class="feature-copy">
               <span class="feature-number">01</span>
-              <p class="eyebrow dark" data-i18n="inventoryEyebrow">批次化库存</p>
-              <h2 data-i18n="inventoryTitle">同一种食材，也保留每一批的差异。</h2>
+              <p class="eyebrow dark" data-i18n="inventoryEyebrow">库存不糊涂</p>
+              <h2 data-i18n="inventoryTitle">同一样食材，这次买的和上次买的，分开算。</h2>
               <p data-i18n="inventoryCopy">
-                数量累加而不是覆盖。每批食材独立记录购买日期、过期日期、位置和状态，临期提醒与库存搜索直接可用。
+                再买一次同样的食材，数量是加上去，不是盖过去。每一批都记着自己的购买日期、保质期、存放位置，快过期了会提醒你，找东西也能直接搜。
               </p>
               <ul class="feature-list">
                 <li><i data-lucide="layers-3"></i><span data-i18n="inventoryPoint1">独立库存批次与保质期</span></li>
@@ -133,9 +133,9 @@
             <div class="feature-copy">
               <span class="feature-number">02</span>
               <p class="eyebrow dark" data-i18n="inboundEyebrow">智能入库</p>
-              <h2 data-i18n="inboundTitle">拍照、说话或输入，先识别，再由你确认。</h2>
+              <h2 data-i18n="inboundTitle">拍张照，或者说一句话，Mise 帮你填好表格，你看一眼再确认。</h2>
               <p data-i18n="inboundCopy">
-                AI 把自然语言和照片整理成可编辑字段，推荐分类、位置和保质期。识别失败时仍可回到完整手动表单。
+                照片或语音会被整理成可以修改的字段——分类、位置、保质期都帮你猜好了。猜得不对，或者干脆没识别出来，手动表单随时都在。
               </p>
               <ul class="feature-list">
                 <li><i data-lucide="camera"></i><span data-i18n="inboundPoint1">照片、文字和组合输入</span></li>
@@ -152,9 +152,9 @@
             <div class="feature-copy">
               <span class="feature-number">03</span>
               <p class="eyebrow dark" data-i18n="recipeEyebrow">菜谱与做饭</p>
-              <h2 data-i18n="recipeTitle">菜谱独立保存，做饭时再核对库存变化。</h2>
+              <h2 data-i18n="recipeTitle">菜谱是菜谱，库存是库存，两边不会互相拖累。</h2>
               <p data-i18n="recipeCopy">
-                通过标签和搜索快速找到菜谱，调整份数后查看建议扣减。库存食材删除不会破坏菜谱，做饭记录也可追溯。
+                用标签和搜索找菜谱，调个份数就知道大概要扣多少库存，你点了确认才真的扣。哪怕把食材从库存删了，菜谱也不会跟着坏掉，做过什么饭都能翻记录。
               </p>
               <ul class="feature-list">
                 <li><i data-lucide="book-open"></i><span data-i18n="recipePoint1">可编辑的食材、步骤与标签</span></li>
@@ -171,10 +171,10 @@
           <div class="feature-row reverse reveal">
             <div class="feature-copy">
               <span class="feature-number">04</span>
-              <p class="eyebrow dark" data-i18n="shoppingEyebrow">购物闭环</p>
-              <h2 data-i18n="shoppingTitle">从菜谱计算缺口，买完直接回填库存。</h2>
+              <p class="eyebrow dark" data-i18n="shoppingEyebrow">少买不重买</p>
+              <h2 data-i18n="shoppingTitle">挑几个菜谱，购物单自己算出还差什么。</h2>
               <p data-i18n="shoppingCopy">
-                选择多个菜谱后，清单会扣除现有库存，只保留真正需要购买的数量。完成采购后可将已买项目重新入库。
+                选好想做的几道菜，清单会自动减掉家里已经有的，只留下真正要买的量。买完回来，勾一下就能重新计入库存，不用再手动录一遍。
               </p>
               <ul class="feature-list">
                 <li><i data-lucide="calculator"></i><span data-i18n="shoppingPoint1">基于库存计算采购缺口</span></li>
@@ -193,7 +193,7 @@
         <div class="section-inner">
           <div class="section-heading centered reveal">
             <p class="eyebrow" data-i18n="workflowEyebrow">从入库到下一次采购</p>
-            <h2 data-i18n="workflowTitle">每一步都让下一步更简单。</h2>
+            <h2 data-i18n="workflowTitle">从冰箱，到餐桌，再到下一次购物车。</h2>
           </div>
           <ol class="workflow-steps">
             <li class="reveal"><i data-lucide="scan-line"></i><b data-i18n="step1Title">入库</b><span data-i18n="step1Copy">记录批次与日期</span></li>
@@ -208,16 +208,16 @@
       <section class="privacy section" id="privacy">
         <div class="section-inner privacy-grid">
           <div class="privacy-copy reveal">
-            <p class="eyebrow dark" data-i18n="privacyEyebrow">隐私与可控性</p>
-            <h2 data-i18n="privacyTitle">你的厨房数据，默认留在你的设备上。</h2>
+            <p class="eyebrow dark" data-i18n="privacyEyebrow">你的数据，你做主</p>
+            <h2 data-i18n="privacyTitle">你家冰箱里有什么，只有你的手机知道。</h2>
             <p data-i18n="privacyCopy">
-              库存、菜谱、购物清单和做饭记录保存在本地 SQLite。后端不保存业务数据，只在需要 AI 识别时处理请求；API 密钥也不会打包进 App。
+              库存、菜谱、购物清单、做饭记录，都存在你手机本地。只有你用拍照识别或语音输入这些功能时，信息才会传到服务器处理一下；平时你家里有什么、做过什么菜，都不会传出你的手机。
             </p>
           </div>
           <div class="principles reveal">
-            <article><i data-lucide="hard-drive"></i><div><h3 data-i18n="localTitle">本地优先</h3><p data-i18n="localCopy">核心业务数据保存在设备 SQLite 中。</p></div></article>
-            <article><i data-lucide="server-cog"></i><div><h3 data-i18n="backendTitle">无状态后端</h3><p data-i18n="backendCopy">后端只代理 AI 请求，不维护厨房数据库。</p></div></article>
-            <article><i data-lucide="mouse-pointer-click"></i><div><h3 data-i18n="controlTitle">用户确认</h3><p data-i18n="controlCopy">AI 输出始终先进入可编辑预览。</p></div></article>
+            <article><i data-lucide="hard-drive"></i><div><h3 data-i18n="localTitle">存在手机里</h3><p data-i18n="localCopy">核心数据都在你手机里，卸载 App 之前一直都在。</p></div></article>
+            <article><i data-lucide="server-cog"></i><div><h3 data-i18n="backendTitle">服务器不存数据</h3><p data-i18n="backendCopy">服务器只处理你发起的识别请求，不会用来存你的库存数据。</p></div></article>
+            <article><i data-lucide="mouse-pointer-click"></i><div><h3 data-i18n="controlTitle">你说了算</h3><p data-i18n="controlCopy">AI 给的结果先给你看一遍、改一改，你点确认了才算数。</p></div></article>
           </div>
         </div>
       </section>
@@ -226,7 +226,7 @@
         <div class="section-inner closing-inner reveal">
           <div>
             <p class="eyebrow" data-i18n="closingEyebrow">Mise · 食序</p>
-            <h2 data-i18n="closingTitle">让厨房信息保持有序，让决定变得更轻松。</h2>
+            <h2 data-i18n="closingTitle">冰箱里有什么，今晚吃什么，心里都有数。</h2>
           </div>
           <div class="store-buttons closing-downloads" aria-label="App downloads">
             <a
@@ -248,7 +248,7 @@
 
     <footer>
       <a class="brand footer-brand" href="#top"><span class="brand-mark"><i data-lucide="utensils"></i></span><span>Mise <b>食序</b></span></a>
-      <p data-i18n="footerCopy">为更清晰的日常厨房流程而构建。</p>
+      <p data-i18n="footerCopy">一个人做的小工具，希望能让你少纠结"今天吃什么"。</p>
       <p>© <span id="year"></span> Mise</p>
     </footer>
   </body>
