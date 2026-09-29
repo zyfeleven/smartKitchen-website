@@ -1,12 +1,12 @@
 {
   "version": "0.1.9",
-  "build": 11,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.1.9-build11/mise-v0.1.9-build11-hongkong-https.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.1.9-build11",
-  "sizeBytes": 68233817,
-  "sha256": "0a6e451e65cc6ccb8c481a917d057f78f88a4c96cbbd19c046fef2d369f38a66",
+  "build": 12,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.1.9-build12/mise-v0.1.9-build12-ai-ledger.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.1.9-build12",
+  "sizeBytes": 68246033,
+  "sha256": "83a14c8171eee47a1c3a20ef7fba7e7c8086f7e35830103847de42a7e618176e",
   "releaseNotes": {
-    "zh": "当前公开测试包。需要邀请码；请覆盖安装以保留本地数据。",
-    "en": "Current public beta. An invite code is required. Install over the existing app to preserve local data."
+    "zh": "新增 AI 点数、Token 用量与账本。需要邀请码；请覆盖安装以保留本地数据。",
+    "en": "New: AI credits, token usage and ledger history. An invite code is required. Install over the existing app to preserve local data."
   }
 }
