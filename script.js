@@ -1,102 +1,398 @@
-const translations = {
-  zh: {
-    skip: "跳到主要内容", navFeatures: "功能", navWorkflow: "工作流", navPrivacy: "隐私",
-    heroEyebrow: "手机里的厨房小助手", heroCopy: "记录库存、翻看菜谱、做饭时核对用量、缺什么就添到购物单——都在一个 App 里，不用来回切换。",
-    explore: "探索功能", comingSoon: "即将上线", downloadApk: "下载 APK · 68 MB", proofLocal: "本地数据", proofBilingual: "中英双语", proofConfirm: "操作前确认", scroll: "向下浏览",
-    releaseNote: "v0.1.9 · build 11。AI 服务已恢复。更新请直接覆盖安装，保留本地数据。",
-    overviewEyebrow: "库存、菜谱、购物，本来就该是一回事", overviewTitle: "先看看家里还有什么，再决定今天吃什么，购物单会自己排除已经有的。",
-    overviewCopy: "入库、做饭、买菜这几件事，在 Mise 里是互相通的：这批食材什么时候过期、这道菜要用多少、购物单上还缺什么，都对得上号——但要不要这么做，还是你说了算。",
-    statFlows: "个环节", statLanguages: "种语言", statDatabase: "部手机就够",
-    inventoryEyebrow: "库存不糊涂", inventoryTitle: "同一样食材，这次买的和上次买的，分开算。",
-    inventoryCopy: "再买一次同样的食材，数量是加上去，不是盖过去。每一批都记着自己的购买日期、保质期、存放位置，快过期了会提醒你，找东西也能直接搜。",
-    inventoryPoint1: "独立库存批次与保质期", inventoryPoint2: "按位置、分类与临期状态筛选", inventoryPoint3: "批量管理、移动和删除",
-    inboundEyebrow: "智能入库", inboundTitle: "拍张照，或者说一句话，Mise 帮你填好表格，你看一眼再确认。",
-    inboundCopy: "照片或语音会被整理成可以修改的字段——分类、位置、保质期都帮你猜好了。猜得不对，或者干脆没识别出来，手动表单随时都在。",
-    inboundPoint1: "照片、文字和组合输入", inboundPoint2: "语音转文字", inboundPoint3: "AI 只预填，不自动写入",
-    recipeEyebrow: "菜谱与做饭", recipeTitle: "菜谱是菜谱，库存是库存，两边不会互相拖累。",
-    recipeCopy: "用标签和搜索找菜谱，调个份数就知道大概要扣多少库存，你点了确认才真的扣。哪怕把食材从库存删了，菜谱也不会跟着坏掉，做过什么饭都能翻记录。",
-    recipePoint1: "可编辑的食材、步骤与标签", recipePoint2: "标签筛选、搜索与批量管理", recipePoint3: "份数换算、库存预览与做饭历史",
-    shoppingEyebrow: "少买不重买", shoppingTitle: "挑几个菜谱，购物单自己算出还差什么。",
-    shoppingCopy: "选好想做的几道菜，清单会自动减掉家里已经有的，只留下真正要买的量。买完回来，勾一下就能重新计入库存，不用再手动录一遍。",
-    shoppingPoint1: "基于库存计算采购缺口", shoppingPoint2: "按卖场区域分组并勾选", shoppingPoint3: "一键回填已购买食材",
-    workflowEyebrow: "从入库到下一次采购", workflowTitle: "从冰箱，到餐桌，再到下一次购物车。",
-    step1Title: "入库", step1Copy: "记录批次与日期", step2Title: "选菜谱", step2Copy: "按标签快速筛选", step3Title: "做饭", step3Copy: "确认库存扣减", step4Title: "采购", step4Copy: "只买缺少的数量", step5Title: "回填", step5Copy: "让库存重新准确",
-    privacyEyebrow: "你的数据，你做主", privacyTitle: "你家冰箱里有什么，只有你的手机知道。",
-    privacyCopy: "库存、菜谱、购物清单、做饭记录，都存在你手机本地。只有你用拍照识别或语音输入这些功能时，信息才会传到服务器处理一下；平时你家里有什么、做过什么菜，都不会传出你的手机。",
-    localTitle: "存在手机里", localCopy: "核心数据都在你手机里，卸载 App 之前一直都在。", backendTitle: "服务器不存数据", backendCopy: "服务器只处理你发起的识别请求，不会用来存你的库存数据。", controlTitle: "你说了算", controlCopy: "AI 给的结果先给你看一遍、改一改，你点确认了才算数。",
-    closingEyebrow: "Mise · 食序", closingTitle: "冰箱里有什么，今晚吃什么，心里都有数。", footerCopy: "一个人做的小工具，希望能让你少纠结“今天吃什么”。",
-    inventoryAlt: "Mise 库存界面", inboundAlt: "Mise 智能入库弹窗", recipesAlt: "Mise 菜谱界面", cookAlt: "Mise 做饭界面", shoppingAlt: "Mise 购物界面"
-  },
-  en: {
-    skip: "Skip to main content", navFeatures: "Features", navWorkflow: "Workflow", navPrivacy: "Privacy",
-    heroEyebrow: "A kitchen helper that lives in your phone", heroCopy: "Track what's in stock, browse recipes, check off what a dish uses, and add what's missing to the list — all in one app, no more switching between four different things.",
-    explore: "Explore features", comingSoon: "Coming soon", downloadApk: "Download APK · 68 MB", proofLocal: "Local data", proofBilingual: "Bilingual", proofConfirm: "Confirm before action", scroll: "Scroll to explore",
-    releaseNote: "v0.1.9 · build 11. AI service is available again. Install over the existing app to keep your local data.",
-    overviewEyebrow: "Inventory, recipes, and shopping were always one thing", overviewTitle: "Check what's already home, then decide what to cook — the shopping list already knows what to skip.",
-    overviewCopy: "Adding stock, cooking, and shopping talk to each other in Mise: when something expires, how much a recipe needs, what's still missing — it all lines up. Whether you actually go through with it is still up to you.",
-    statFlows: "steps", statLanguages: "languages", statDatabase: "phone, that's it",
-    inventoryEyebrow: "Never lose track of what's in stock", inventoryTitle: "Buy the same thing twice, and it's still two separate batches.",
-    inventoryCopy: "Buy more of something and it adds on top, it doesn't overwrite what's already there. Every batch remembers its own purchase date, expiry date, and spot in the kitchen — you'll get a nudge before things expire, and you can just search for what you need.",
-    inventoryPoint1: "Independent batches and expiry dates", inventoryPoint2: "Filter by location, category, or urgency", inventoryPoint3: "Batch management, moving, and deletion",
-    inboundEyebrow: "Smart inbound", inboundTitle: "Snap a photo or say it out loud, and Mise fills in the form for you.",
-    inboundCopy: "Photos or voice get turned into fields you can edit — category, location, and shelf life are all guessed for you. Guessed wrong, or didn't recognize it at all? The manual form is always right there.",
-    inboundPoint1: "Photo, text, and combined input", inboundPoint2: "Speech to text", inboundPoint3: "AI prefills but never saves automatically",
-    recipeEyebrow: "Recipes and cooking", recipeTitle: "Recipes are recipes, inventory is inventory — neither one breaks the other.",
-    recipeCopy: "Find a recipe by tag or search, adjust the servings, and see roughly what it'll use — nothing gets deducted until you confirm it. Delete an ingredient from inventory and the recipe still works fine, and everything you've cooked stays in your history.",
-    recipePoint1: "Editable ingredients, steps, and tags", recipePoint2: "Tag filters, search, and batch management", recipePoint3: "Serving scale, inventory preview, and history",
-    shoppingEyebrow: "Buy less, buy it once", shoppingTitle: "Pick a few recipes, and the list figures out what's missing.",
-    shoppingCopy: "Choose the meals you want to cook, and the list subtracts what's already in the kitchen — you'll only see what you actually need to buy. Check it off after shopping and it goes straight back into inventory, no re-typing.",
-    shoppingPoint1: "Calculate purchase gaps from inventory", shoppingPoint2: "Group and check off by store aisle", shoppingPoint3: "Restock purchased ingredients",
-    workflowEyebrow: "From inbound to the next shop", workflowTitle: "From the fridge, to the table, to the next cart.",
-    step1Title: "Add stock", step1Copy: "Record batches and dates", step2Title: "Pick recipes", step2Copy: "Filter quickly by tag", step3Title: "Cook", step3Copy: "Confirm inventory use", step4Title: "Shop", step4Copy: "Buy only the gap", step5Title: "Restock", step5Copy: "Keep inventory accurate",
-    privacyEyebrow: "Your data, your call", privacyTitle: "What's in your fridge stays between you and your phone.",
-    privacyCopy: "Inventory, recipes, shopping lists, and cooking history all stay on your phone. Only when you use photo recognition or voice input does anything get sent off for processing — the rest of the time, what's in your kitchen never leaves your phone.",
-    localTitle: "Stored on your phone", localCopy: "Your data stays on your phone, for as long as the app stays installed.", backendTitle: "The server doesn't store your data", backendCopy: "The server only handles the recognition requests you send it — it's never used to store your kitchen data.", controlTitle: "You call the shots", controlCopy: "AI results show up as a draft you can edit — nothing is saved until you confirm it.",
-    closingEyebrow: "Mise · 食序", closingTitle: "Know what's in the fridge. Know what's for dinner.", footerCopy: "A one-person side project, made to take some of the guesswork out of 'what's for dinner.'",
-    inventoryAlt: "Mise inventory screen", inboundAlt: "Mise smart inbound sheet", recipesAlt: "Mise recipes screen", cookAlt: "Mise cooking screen", shoppingAlt: "Mise shopping screen"
-  }
+"use strict";
+
+// This demo is deterministic. It never sends kitchen data or invokes a model.
+const english = {
+  skip: "Skip to content",
+  navAgent: "Meet the agent",
+  navToday: "Available today",
+  navQuestions: "Questions",
+  joinBeta: "Try the beta",
+  heroLine1: "Your kitchen.",
+  heroLine2: "Your",
+  heroCopy:
+    "From what you have to what you could make. Mise connects ingredients, recipes, and shopping, so the next step starts with your kitchen.",
+  heroCta: "Try the Android beta",
+  heroDemo: "See the thinking",
+  heroNote:
+    "AI kitchen tools are in beta. The unified agent workflow is in development.",
+  demoLabel: "THE AGENT, IN CONTEXT",
+  demoCaption: "Interactive concept · not live AI",
+  agentSubtitle: "A small plan for tonight.",
+  contextBadge: "Kitchen context",
+  scenarioQuick: "Dinner in 20",
+  scenarioFresh: "Use it while fresh",
+  scenarioShop: "Buy only what's missing",
+  contextTitle: "01 / READ THE KITCHEN",
+  sampleData: "Sample ingredients",
+  planTitle: "02 / A LITTLE INSPIRATION",
+  planToggle: "See the next step",
+  actionsTitle: "03 / YOUR CALL",
+  confirmDemo: "Confirm in this demo",
+  demoConfirmed: "Example confirmed. Your real kitchen data is unchanged.",
+  demoFootnote:
+    "A preview of the agent experience we're designing. It doesn't access or change your data.",
+  stripTitle: "Good ideas start with context.",
+  stripInventory: "What you have",
+  stripTime: "Time for tonight",
+  stripFresh: "What's fresh",
+  stripChoice: "Your choices",
+  approachEyebrow: "ONE AGENT. A CONNECTED WAY OF THINKING.",
+  approachTitle: "Turn kitchen context\ninto a useful next step.",
+  approachCopy:
+    "Our direction for the Mise agent: understand the kitchen, explain the suggestion, and leave the decision with you.",
+  step1Title: "Understand, then suggest.",
+  step1Copy:
+    "Start with quantities, ingredients to use soon, and what you need from this meal. Make the suggestion fit the day you're actually having.",
+  step1Note: "Context comes first",
+  step2Title: "Make a workable plan.",
+  step2Copy:
+    "A dish that fits, ingredients you can use, and anything that's missing. The reasons behind the choice should be clear, too.",
+  step2Note: "A reason behind the recipe",
+  step3Title: "Keep the final say.",
+  step3Copy:
+    "Save a recipe, prepare a shopping list, log a meal. Review and adjust the proposed actions before anything changes.",
+  step3Note: "Actions you can review",
+  todayEyebrow: "SOMETHING USEFUL, RIGHT NOW",
+  todayTitle: "A thoughtful agent starts\nwith an organized kitchen.",
+  todayCopy:
+    "Today's app brings AI ingredient entry, recipes from your inventory, cooking records, and shopping together. Start with one grocery trip or one dinner.",
+  cap1Title: "Capture it. Make sense of it.",
+  cap1Copy:
+    "Turn a photo or a few words into ingredient entries. Check names, amounts, and storage locations before adding them.",
+  receipt1: "Tomatoes × 3",
+  receipt2: "Eggs × 6",
+  receiptResult: "Ready for your review",
+  cap2Title: "Fresh ideas. Familiar ingredients.",
+  cap2Copy:
+    "Generate recipes from your inventory or get suggestions from your collection. Choose servings and review stock deductions after cooking.",
+  recipeVisual: "Your ingredients.\nTonight's menu.",
+  cap3Title: "Shop for the gap.",
+  cap3Copy:
+    "Compare selected recipes with your stock to work out what to buy. Confirm your purchases back into inventory for next time.",
+  shoppingHave: "Eggs, already at home",
+  shoppingNeed: "Tomatoes, need 2 more",
+  phaseCurrent: "IN BETA",
+  phaseCurrentCopy: "AI kitchen tools + server-side usage ledger",
+  phaseNext: "IN DEVELOPMENT",
+  phaseNextCopy: "A unified kitchen agent workflow",
+  phaseLater: "UP NEXT",
+  phaseLaterCopy: "Accounts, cloud backup, and device recovery",
+  trustEyebrow: "USEFUL HELP. CLEAR EXPECTATIONS.",
+  trustTitle: "Know what's happening\nat every step.",
+  trust1Title: "Review the important changes.",
+  trust1Copy:
+    "Check AI recognition and recipe results. Adding stock and recording consumption have confirmation steps. Manual tools stay available.",
+  trust2Title: "Local records. On-demand AI.",
+  trust2Copy:
+    "Core inventory and recipe records live on your phone. When you use AI, relevant text, images, or ingredient information is sent to the server and model service for processing.",
+  trust3Title: "Usage you can account for.",
+  trust3Copy:
+    "The server records tokens and credit changes, and briefly caches AI results for retries. In-app credit balance and history are available starting with build 12.",
+  faqTitle: "Before you start.",
+  faq1Question: "Is the full agent available now?",
+  faq1Answer:
+    "The beta currently offers individual AI features, including ingredient entry and recipes from your inventory. The unified agent that connects context, planning, and actions is still in development. The interactive concept above is not a live app screen.",
+  faq2Question: "How do I get an invite code?",
+  faq2Answer:
+    "The maintainer is inviting a small group of testers. Downloading the APK doesn't provide an invite code. Contact the maintainer through the project feedback page to ask about the beta.",
+  feedbackLink: "Project feedback ↗",
+  faq3Question: "Does the beta cost anything?",
+  faq3Answer:
+    "There is no top-up or payment flow currently. AI features use beta credits. The current policy grants each invite an initial 100 credits and deducts points when a feature succeeds. Contact the maintainer if you run out; manual features remain available.",
+  faq4Question: "Can I restore my kitchen on another phone?",
+  faq4Answer:
+    "There are no accounts or cloud kitchen backups yet. Inventory, recipes, and cooking history live on your device; uninstalling or clearing app data may remove them. Install updates over the existing app. The server retains invite, usage, and credit records, and caches AI results for about 24 hours.",
+  faq5Question: "Is there an iPhone version?",
+  faq5Answer:
+    "This page currently offers the Android beta APK. There is no public iOS download yet. We'll update this page when one is available.",
+  downloadEyebrow: "LET'S BUILD MISE, ONE MEAL AT A TIME",
+  downloadTitle: "Make a little room\nfor something new.",
+  downloadCopy:
+    "We're looking for a small group of people to use Mise in their real kitchens and share what works. Help the next version of the agent grow from everyday meals.",
+  androidBeta: "ANDROID BETA",
+  downloadApk: "Download Android APK",
+  releaseDetails: "Read the release notes ↗",
+  inviteRequired: "Invite code required",
+  iosStatus: "iOS not available yet",
+  footerCopy: "Good food. A little less kitchen friction.",
+  footerFeedback: "Feedback ↗",
 };
 
-const toggle = document.querySelector("#languageToggle");
-const label = document.querySelector("#languageLabel");
-const year = document.querySelector("#year");
-let language = navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
+const scenarios = {
+  quick: {
+    zh: {
+      prompt: "今天有点累，家里的食材能做什么？",
+      ingredients: [
+        ["菠菜", "200 g · 优先用"],
+        ["鸡蛋", "4 个"],
+        ["米饭", "1 碗"],
+      ],
+      reason:
+        "菠菜可以优先用，鸡蛋和米饭也都有。先做一道简单的，不用再出门买菜。",
+      meal: "菠菜鸡蛋炒饭",
+      tags: "约 20 分钟 · 1 人份 · 无需添购",
+      action: "保存这份菜谱；做饭时再核对实际食材用量。",
+    },
+    en: {
+      prompt: "A long day. What could I make with what's at home?",
+      ingredients: [
+        ["Spinach", "200 g · use soon"],
+        ["Eggs", "4 available"],
+        ["Rice", "1 bowl"],
+      ],
+      reason:
+        "The spinach could be used first, and eggs and rice are already here. Let's keep dinner simple, with no extra trip to the store.",
+      meal: "Spinach & egg fried rice",
+      tags: "About 20 min · Serves 1 · No shopping",
+      action:
+        "Save the recipe. Review the actual ingredient amounts when you log the meal.",
+    },
+  },
+  fresh: {
+    zh: {
+      prompt: "先看看快到期的食材，今晚尽量用上。",
+      ingredients: [
+        ["菠菜", "200 g · 明天到期"],
+        ["豆腐", "1 盒 · 后天到期"],
+        ["米饭", "2 碗"],
+      ],
+      reason:
+        "先安排菠菜和豆腐，搭配已有的米饭。两样临期食材放在一顿里，减少剩下的零散食材。",
+      meal: "菠菜豆腐盖饭",
+      tags: "约 25 分钟 · 2 人份 · 优先用临期",
+      action: "保存这份两人餐方案；食材是否新鲜仍需做饭前检查。",
+    },
+    en: {
+      prompt: "What should we use soon? Let's start there tonight.",
+      ingredients: [
+        ["Spinach", "200 g · due tomorrow"],
+        ["Tofu", "1 pack · due in 2 days"],
+        ["Rice", "2 bowls"],
+      ],
+      reason:
+        "Start with the spinach and tofu, alongside the rice you have. Using both in one meal leaves fewer small leftovers to plan around.",
+      meal: "Spinach & tofu rice bowl",
+      tags: "About 25 min · Serves 2 · Use soon",
+      action:
+        "Save this plan for two. Check that the ingredients are still fresh before cooking.",
+    },
+  },
+  shop: {
+    zh: {
+      prompt: "想吃番茄鸡蛋饭，帮我看看还缺什么。",
+      ingredients: [
+        ["番茄", "还缺 2 个"],
+        ["鸡蛋", "4 个 · 已有"],
+        ["米饭", "2 碗 · 已有"],
+      ],
+      reason:
+        "鸡蛋和米饭够用。采购单只需要补上番茄，家里已有的食材就不重复买了。",
+      meal: "番茄鸡蛋饭",
+      tags: "约 20 分钟 · 2 人份 · 补买 1 项",
+      action: "把「番茄 2 个」加入示例采购计划；真实购物单不会改变。",
+    },
+    en: {
+      prompt: "Tomato and egg rice sounds good. What do I need?",
+      ingredients: [
+        ["Tomatoes", "Need 2 more"],
+        ["Eggs", "4 · already have"],
+        ["Rice", "2 bowls · have"],
+      ],
+      reason:
+        "There's enough rice and eggs. Only tomatoes need to go on the list, so you don't buy what is already in the kitchen.",
+      meal: "Tomato & egg rice",
+      tags: "About 20 min · Serves 2 · Buy 1 item",
+      action:
+        "Add 2 tomatoes to the example shopping plan. Your real shopping list stays unchanged.",
+    },
+  },
+};
+
+const copyElements = [...document.querySelectorAll("[data-i18n]")];
+const chinese = Object.fromEntries(
+  copyElements.map((el) => [
+    el.dataset.i18n,
+    [...el.childNodes]
+      .map((node) => (node.nodeName === "BR" ? "\n" : node.textContent))
+      .join(""),
+  ]),
+);
+chinese.demoConfirmed = "示例已确认，真实厨房数据没有改变。";
+const ariaCopy = {
+  zh: { navLabel: "主导航", scenarioLabel: "选择演示场景" },
+  en: { navLabel: "Main navigation", scenarioLabel: "Choose a demo scenario" },
+};
+let language = "zh";
+try {
+  const saved = localStorage.getItem("mise-language");
+  language =
+    saved === "en" || saved === "zh"
+      ? saved
+      : navigator.language.startsWith("zh")
+        ? "zh"
+        : "en";
+} catch {
+  /* The page also works when browser storage is disabled. */
+}
+let scenario = "quick";
+let expanded = false;
+let confirmed = false;
+let release = null;
+const fallbackReleaseNotes = {
+  zh: document.querySelector("[data-release-note]").textContent,
+  en: "Public beta. An invite code is required. Install over the existing app to preserve local data.",
+};
+const $ = (id) => document.getElementById(id);
+const t = (key) =>
+  (language === "zh" ? chinese : english)[key] ?? chinese[key] ?? "";
+
+function setCopy(element, value) {
+  const lines = value.split("\n");
+  element.replaceChildren(
+    ...lines.flatMap((line, index) =>
+      index
+        ? [document.createElement("br"), document.createTextNode(line)]
+        : [document.createTextNode(line)],
+    ),
+  );
+}
+
+function renderScenario() {
+  const data = scenarios[scenario][language];
+  $("demoPrompt").textContent = data.prompt;
+  $("demoReason").textContent = data.reason;
+  $("demoMeal").textContent = data.meal;
+  $("demoTags").textContent = data.tags;
+  $("demoAction").textContent = data.action;
+  $("demoIngredients").replaceChildren(
+    ...data.ingredients.map(([name, detail]) => {
+      const item = document.createElement("span");
+      const note = document.createElement("small");
+      item.append(document.createTextNode(name));
+      note.textContent = detail;
+      item.append(note);
+      return item;
+    }),
+  );
+  document
+    .querySelectorAll("[data-scenario]")
+    .forEach((button) =>
+      button.setAttribute(
+        "aria-pressed",
+        String(button.dataset.scenario === scenario),
+      ),
+    );
+  $("planToggle").setAttribute("aria-expanded", String(expanded));
+  $("actionPanel").hidden = !expanded;
+  $("confirmDemo").disabled = confirmed;
+  $("demoStatus").textContent = confirmed ? t("demoConfirmed") : "";
+}
+
+function renderRelease() {
+  document.querySelectorAll("[data-release-note]").forEach((el) => {
+    el.textContent = (release?.releaseNotes ?? fallbackReleaseNotes)[language];
+  });
+  if (!release) return;
+  document.querySelectorAll("[data-apk-link]").forEach((link) => {
+    link.href = release.apkUrl;
+  });
+  document.querySelectorAll("[data-release-link]").forEach((link) => {
+    link.href = release.releaseUrl;
+  });
+  document.querySelectorAll("[data-release-meta]").forEach((el) => {
+    el.textContent = `v${release.version} · build ${release.build} · ${(release.sizeBytes / 1000000).toFixed(1)} MB`;
+  });
+}
 
 function applyLanguage(nextLanguage) {
   language = nextLanguage;
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const value = translations[language][element.dataset.i18n];
-    if (value) element.textContent = value;
-  });
-  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
-    const value = translations[language][element.dataset.i18nAlt];
-    if (value) element.alt = value;
-  });
-  document.querySelectorAll("[data-app-image]").forEach((image) => {
-    const suffix = language === "en" ? "-en" : "";
-    image.src = `assets/${image.dataset.appImage}${suffix}.png`;
-  });
-  label.textContent = language === "zh" ? "EN" : "中文";
-  toggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换到中文");
-  document.title = language === "zh" ? "Mise 食序 — 知道冰箱里有什么" : "Mise 食序 — Know what's in your fridge";
+  try {
+    localStorage.setItem("mise-language", language);
+  } catch {
+    /* Optional preference. */
+  }
+  copyElements.forEach((el) => setCopy(el, t(el.dataset.i18n)));
+  document
+    .querySelectorAll("[data-i18n-aria]")
+    .forEach((el) =>
+      el.setAttribute("aria-label", ariaCopy[language][el.dataset.i18nAria]),
+    );
+  $("languageToggle").textContent = language === "zh" ? "EN" : "中文";
+  $("languageToggle").setAttribute(
+    "aria-label",
+    language === "zh" ? "Switch to English" : "切换到中文",
+  );
+  const title =
+    language === "zh"
+      ? "Mise 食序 — 一个懂你厨房的 Agent"
+      : "Mise — Your kitchen agent";
+  const description =
+    language === "zh"
+      ? "Mise 食序，从你已有的食材出发。体验 AI 入库、库存菜谱和采购管理，一起探索有上下文、由你确认的厨房 Agent。"
+      : "Start with the ingredients you have. Try AI kitchen tools in the Mise beta and explore a kitchen agent built around context and your decisions.";
+  document.title = title;
+  document.querySelector('meta[name="description"]').content = description;
+  document.querySelector('meta[property="og:title"]').content = title;
+  document.querySelector('meta[property="og:description"]').content =
+    description;
+  renderScenario();
+  renderRelease();
 }
 
-toggle.addEventListener("click", () => applyLanguage(language === "zh" ? "en" : "zh"));
-year.textContent = new Date().getFullYear();
+$("languageToggle").addEventListener("click", () =>
+  applyLanguage(language === "zh" ? "en" : "zh"),
+);
+document.querySelectorAll("[data-scenario]").forEach((button) =>
+  button.addEventListener("click", () => {
+    scenario = button.dataset.scenario;
+    expanded = false;
+    confirmed = false;
+    renderScenario();
+  }),
+);
+$("planToggle").addEventListener("click", () => {
+  expanded = !expanded;
+  renderScenario();
+});
+$("confirmDemo").addEventListener("click", () => {
+  confirmed = true;
+  renderScenario();
+});
+$("year").textContent = new Date().getFullYear();
 applyLanguage(language);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
+// Publish the APK first, then update this manifest. Never point visitors to a queued build.
+fetch("release.json", { cache: "no-cache" })
+  .then((response) => {
+    if (!response.ok) throw new Error("Release unavailable");
+    return response.json();
+  })
+  .then((data) => {
+    const assetRoot =
+      "https://github.com/zyfeleven/smartKitchen-website/releases/download/";
+    const releaseRoot =
+      "https://github.com/zyfeleven/smartKitchen-website/releases/tag/";
+    if (
+      typeof data.apkUrl !== "string" ||
+      !data.apkUrl.startsWith(assetRoot) ||
+      !data.apkUrl.endsWith(".apk") ||
+      typeof data.releaseUrl !== "string" ||
+      !data.releaseUrl.startsWith(releaseRoot) ||
+      typeof data.version !== "string" ||
+      !/^\d+\.\d+\.\d+$/.test(data.version) ||
+      !Number.isSafeInteger(data.build) ||
+      data.build <= 0 ||
+      !Number.isSafeInteger(data.sizeBytes) ||
+      data.sizeBytes <= 0 ||
+      typeof data.releaseNotes?.zh !== "string" ||
+      typeof data.releaseNotes?.en !== "string"
+    )
+      return;
+    release = data;
+    renderRelease();
+  })
+  .catch(() => {
+    // The static HTML keeps a verified download available during a network failure.
+    renderRelease();
   });
-}, { threshold: 0.12 });
-
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-
-window.addEventListener("load", () => {
-  if (window.lucide) window.lucide.createIcons();
-});
