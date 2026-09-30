@@ -7,7 +7,7 @@ the App source repository is private, so do not use its Issues URL as a public c
 
 `privacy.html` and `support.html` are bilingual, script-free pages linked from the App and footer.
 Their approved contact address is `zyfeleven@gmail.com`. `legal.css` owns their responsive styling.
-Keep policy claims aligned with deployed behavior; Android build 13 predates the iOS consent UI.
+Keep policy claims aligned with deployed behavior; Android build 14 includes the versioned AI consent UI.
 Do not claim accounts, purchases or cloud backup exist until those features ship.
 
 ```bash
@@ -18,7 +18,8 @@ Open `http://localhost:8090`. Use a different port if it is already occupied.
 
 ## Product positioning
 
-Mise 0.2.0 includes foreground multi-step kitchen agent tasks, clarification, reviewed writes,
+Mise 0.2.1 adds Agent photo input, editable voice dictation and opt-in recipe nutrition estimates.
+It includes foreground multi-step kitchen agent tasks, clarification, reviewed writes,
 inspectable action receipts and conflict-aware undo for supported changes. Tasks can pause/resume;
 do not promise cloud background execution, accounts or kitchen-data sync. Undo does not refund AI credits.
 The website's three interactive examples still run locally with sample data and no API calls.
@@ -41,7 +42,8 @@ GitHub Release artifact first, then update:
 - `releaseNotes.zh` and `releaseNotes.en`.
 
 Update the two static `data-apk-link` href values and the static release link/metadata in `index.html`
-to the same verified release for no-JavaScript/network-failure fallback. Preserve all other page copy
+to the same verified release for no-JavaScript/network-failure fallback. Sync only the English
+`fallbackReleaseNotes.en` string in `script.js` as well. Preserve all other page copy
 and design. The noscript release link uses GitHub's `/releases/latest` URL. The `mise-apk` automation
 must follow this process and must not replace the redesigned HTML/JS with its older prepared edits.
 

@@ -1,12 +1,12 @@
 {
-  "version": "0.2.0",
-  "build": 13,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.0-build13/mise-v0.2.0-build13-kitchen-agent.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.0-build13",
-  "sizeBytes": 68393729,
-  "sha256": "427d272065fc00bd6689b81a64ee1b098346e0f764590ac63b9f92d1efbd6372",
+  "version": "0.2.1",
+  "build": 14,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.1-build14/mise-v0.2.1-build14-agent-media.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.1-build14",
+  "sizeBytes": 68435381,
+  "sha256": "c75f3cfafa144bc427a4b9740ca02e430f49574adc77516adaf6b88710926dca",
   "releaseNotes": {
-    "zh": "新增多步厨房 Agent、操作记录与撤销，优化全 App 弹窗。需要邀请码；请覆盖安装以保留本地数据。",
-    "en": "Multi-step kitchen agent, action history and undo, plus refreshed app dialogs. Invite required; install over the existing app to keep local data."
+    "zh": "助手新增拍照识别与语音转文字，支持健身模式营养估算。入库前确认，操作可撤销。需要邀请码；请覆盖安装以保留本地数据。",
+    "en": "Agent photo input and editable voice dictation, plus Fitness mode nutrition estimates. Review before adding stock and undo supported changes. Invite required; install over the existing app to keep local data."
   }
 }

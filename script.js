@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Multi-step kitchen agent, action history and undo, plus refreshed app dialogs. Invite required; install over the existing app to keep local data.",
+  en: "Agent photo input and editable voice dictation, plus Fitness mode nutrition estimates. Review before adding stock and undo supported changes. Invite required; install over the existing app to keep local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
