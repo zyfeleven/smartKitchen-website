@@ -95,9 +95,9 @@ def publish(root, commit, files, download=fetch):
     html = files["index.html"].decode("utf-8")
     if html.count(release["apkUrl"]) != 2:
         raise ValueError("Expected exactly two matching static download links")
-    mirror_url = f"{ORIGIN}/site/downloads/{filename}"
+    mirror_url = f"{ORIGIN}/mise-site/downloads/{filename}"
     html = html.replace(release["apkUrl"], mirror_url)
-    html = html.replace("https://zyfeleven.github.io/smartKitchen-website/", f"{ORIGIN}/site/")
+    html = html.replace("https://zyfeleven.github.io/smartKitchen-website/", f"{ORIGIN}/mise-site/")
     release["apkUrl"] = mirror_url
     files = dict(files)
     files["index.html"] = html.encode("utf-8")
@@ -120,7 +120,8 @@ def publish(root, commit, files, download=fetch):
             os.replace(staged_apk, apk_path)
         releases = root / "releases"
         releases.mkdir(exist_ok=True)
-        destination = releases / commit
+        # Keep the previous /site rendering recoverable during the public-path migration.
+        destination = releases / f"{commit}-mise-site"
         if not destination.exists():
             os.replace(stage, destination)
         pending = root / ".current-next"
@@ -140,7 +141,9 @@ def main():
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
         raise ValueError("Invalid source commit")
     current = args.root / "current/source-commit.txt"
-    if current.exists() and current.read_text().strip() == commit:
+    manifest = args.root / "current/release.json"
+    has_current_path = manifest.exists() and json.loads(manifest.read_text())["apkUrl"].startswith(f"{ORIGIN}/mise-site/downloads/")
+    if current.exists() and current.read_text().strip() == commit and has_current_path:
         print("Public mirror is current")
         return
     archive = fetch(f"https://codeload.github.com/{REPO}/zip/{commit}", 40_000_000)

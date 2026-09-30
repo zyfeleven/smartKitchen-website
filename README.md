@@ -60,8 +60,9 @@ The site is deployed from the `main` branch root through GitHub Pages.
 
 ### Hong Kong HTTPS mirror
 
-The mirror uses `https://8.217.241.184/site/`; the backend continues to use `/mise/`.
-The mirror serves its APK at `/site/downloads/`, so downloading from this entry does not
+The mirror uses `https://8.217.241.184/mise-site/`; the backend continues to use `/mise/`.
+Legacy `/site/` URLs permanently redirect to `/mise-site/`, preserving subpaths and queries.
+The mirror serves its APK at `/mise-site/downloads/`, so downloading from this entry does not
 require a client connection to GitHub. GitHub Pages and GitHub Release remain available.
 
 `deploy/hongkong/sync_site.py` reads public `main` at a pinned commit, copies only approved
@@ -82,7 +83,7 @@ Include `deploy/hongkong/nginx-site.conf` in the existing HTTPS server block aft
 the current Nginx configuration. Run `nginx -t` before reloading; do not replace backend
 locations or TLS/ACME settings. Install the service/timer only after a successful first sync.
 Operational checks: `systemctl status mise-site-sync.timer`,
-`journalctl -u mise-site-sync.service`, and `curl https://8.217.241.184/site/release.json`.
+`journalctl -u mise-site-sync.service`, and `curl https://8.217.241.184/mise-site/release.json`.
 To sync immediately: `systemctl start mise-site-sync.service`.
 To roll back, pause the timer and atomically point `/var/www/mise-site/current` at a retained
 directory under `releases/`; APKs remain in `downloads/`. Keep disk usage under review.
