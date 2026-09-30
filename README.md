@@ -5,6 +5,11 @@ the App source repository is private, so do not use its Issues URL as a public c
 
 ## Local preview
 
+`privacy.html` and `support.html` are bilingual, script-free pages linked from the App and footer.
+Their approved contact address is `zyfeleven@gmail.com`. `legal.css` owns their responsive styling.
+Keep policy claims aligned with deployed behavior; Android build 13 predates the iOS consent UI.
+Do not claim accounts, purchases or cloud backup exist until those features ship.
+
 ```bash
 python -m http.server 8090
 ```

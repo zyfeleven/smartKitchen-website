@@ -2,6 +2,8 @@
 
 // This demo is deterministic. It never sends kitchen data or invokes a model.
 const english = {
+  footerPrivacy: "Privacy",
+  footerSupport: "Help",
   skip: "Skip to content",
   navAgent: "Meet the agent",
   navToday: "Available today",
