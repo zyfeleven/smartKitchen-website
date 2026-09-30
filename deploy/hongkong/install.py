@@ -63,7 +63,7 @@ def main():
             shutil.copy2(backup / "mise-site.conf", snippet)
         raise
     run("systemctl", "enable", "--now", "mise-site-sync.timer")
-    print("Mirror installed at https://8.217.241.184/site/; backup:", backup)
+    print("Mirror installed at https://8.217.241.184/mise-site/; backup:", backup)
 
 
 if __name__ == "__main__":
