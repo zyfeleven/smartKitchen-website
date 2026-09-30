@@ -1,12 +1,12 @@
 {
-  "version": "0.2.2",
-  "build": 15,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.2-build15/mise-v0.2.2-build15-adaptive-ui.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.2-build15",
-  "sizeBytes": 69465094,
-  "sha256": "749b7fe2bc9236052fb7bdb67e743282dcac1a9e0b205ae7ffb0646a5dffad31",
+  "version": "0.2.3",
+  "build": 17,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.3-build17/mise-v0.2.3-build17-agent-ui.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.3-build17",
+  "sizeBytes": 69456174,
+  "sha256": "97b29292a48a3fa65931718a62bcffc4ab266ba292d73bf58d80f437bbb48b7c",
   "releaseNotes": {
-    "zh": "修复底栏遮挡，改善大字体、按钮和弹窗适配。新增可选的助手本机记忆，可查看、编辑或忘记。需要邀请码；请覆盖安装以保留本地数据。",
-    "en": "Safe-area fixes for bottom navigation, larger text and dialogs. Optional device memory with review, editing and forgetting. Invite required; install over the existing app to keep local data."
+    "zh": "助手界面更简洁，按钮和面板配色更柔和，保留清晰反馈与足够点击面积。历史、新对话和当前任务控制更易找到，操作详情与撤销分开。需要邀请码；请覆盖安装以保留本地数据。",
+    "en": "Simpler Agent navigation, softer buttons with clear touch feedback. Easier access to history, new chats and task controls, with separate details and undo. Invite required; install over the existing app to keep local data."
   }
 }
