@@ -13,10 +13,11 @@ Open `http://localhost:8090`. Use a different port if it is already occupied.
 
 ## Product positioning
 
-The site introduces the kitchen agent direction and the currently available AI kitchen beta.
-The independent `mise-agent` checkout is still a scaffold, so the interactive examples are explicitly
-labelled concepts. Do not describe them as shipped autonomous actions or live model responses.
-All three examples run locally without API calls. Core kitchen data is local, but AI requests send
+Mise 0.2.0 includes foreground multi-step kitchen agent tasks, clarification, reviewed writes,
+inspectable action receipts and conflict-aware undo for supported changes. Tasks can pause/resume;
+do not promise cloud background execution, accounts or kitchen-data sync. Undo does not refund AI credits.
+The website's three interactive examples still run locally with sample data and no API calls.
+Do not describe the website demo as a live model response or a live App screen. Core kitchen data is local, but AI requests send
 relevant inputs to the backend/model provider; the backend persists invite, usage and credit records
 and caches generated responses for about 24 hours. Keep privacy copy consistent with that behavior.
 

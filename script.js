@@ -14,9 +14,9 @@ const english = {
   heroCta: "Try the Android beta",
   heroDemo: "See the thinking",
   heroNote:
-    "AI kitchen tools are in beta. The unified agent workflow is in development.",
+    "The kitchen agent is in beta. Start with a goal and work through it together.",
   demoLabel: "THE AGENT, IN CONTEXT",
-  demoCaption: "Interactive concept · not live AI",
+  demoCaption: "Interactive demo · not live AI",
   agentSubtitle: "A small plan for tonight.",
   contextBadge: "Kitchen context",
   scenarioQuick: "Dinner in 20",
@@ -30,7 +30,7 @@ const english = {
   confirmDemo: "Confirm in this demo",
   demoConfirmed: "Example confirmed. Your real kitchen data is unchanged.",
   demoFootnote:
-    "A preview of the agent experience we're designing. It doesn't access or change your data.",
+    "A workflow illustrated with sample ingredients. This demo makes no AI calls and never reads or changes your data. Try the real workflow in the app.",
   stripTitle: "Good ideas start with context.",
   stripInventory: "What you have",
   stripTime: "Time for tonight",
@@ -39,7 +39,7 @@ const english = {
   approachEyebrow: "ONE AGENT. A CONNECTED WAY OF THINKING.",
   approachTitle: "Turn kitchen context\ninto a useful next step.",
   approachCopy:
-    "Our direction for the Mise agent: understand the kitchen, explain the suggestion, and leave the decision with you.",
+    "From understanding your kitchen to suggestions and reviewed changes, Mise connects the steps and asks when it needs your input.",
   step1Title: "Understand, then suggest.",
   step1Copy:
     "Start with quantities, ingredients to use soon, and what you need from this meal. Make the suggestion fit the day you're actually having.",
@@ -55,7 +55,7 @@ const english = {
   todayEyebrow: "SOMETHING USEFUL, RIGHT NOW",
   todayTitle: "A thoughtful agent starts\nwith an organized kitchen.",
   todayCopy:
-    "Today's app brings AI ingredient entry, recipes from your inventory, cooking records, and shopping together. Start with one grocery trip or one dinner.",
+    "Tell Mise what you want to get done. It can check stock, find or generate recipes, and prepare shopping and meal plans. Inspect each step and confirm important changes.",
   cap1Title: "Capture it. Make sense of it.",
   cap1Copy:
     "Turn a photo or a few words into ingredient entries. Check names, amounts, and storage locations before adding them.",
@@ -72,26 +72,26 @@ const english = {
   shoppingHave: "Eggs, already at home",
   shoppingNeed: "Tomatoes, need 2 more",
   phaseCurrent: "IN BETA",
-  phaseCurrentCopy: "AI kitchen tools + server-side usage ledger",
-  phaseNext: "IN DEVELOPMENT",
-  phaseNextCopy: "A unified kitchen agent workflow",
+  phaseCurrentCopy: "Multi-step agent, action history, undo and AI credit ledger",
+  phaseNext: "BEING REFINED",
+  phaseNextCopy: "More natural conversations and more reliable complex tasks",
   phaseLater: "UP NEXT",
   phaseLaterCopy: "Accounts, cloud backup, and device recovery",
   trustEyebrow: "USEFUL HELP. CLEAR EXPECTATIONS.",
   trustTitle: "Know what's happening\nat every step.",
   trust1Title: "Review the important changes.",
   trust1Copy:
-    "Check AI recognition and recipe results. Adding stock and recording consumption have confirmation steps. Manual tools stay available.",
+    "Review changes before saving and inspect the record afterwards. Undo supported actions such as adding stock or saving recipes. If later edits conflict, the app explains why it cannot safely undo them.",
   trust2Title: "Local records. On-demand AI.",
   trust2Copy:
     "Core inventory and recipe records live on your phone. When you use AI, relevant text, images, or ingredient information is sent to the server and model service for processing.",
   trust3Title: "Usage you can account for.",
   trust3Copy:
-    "The server records tokens and credit changes, and briefly caches AI results for retries. In-app credit balance and history are available starting with build 12.",
+    "View AI credits and usage in the app. Multi-step tasks can make several AI calls; undoing saved changes does not refund credits already used. The server records usage and briefly caches results for retries.",
   faqTitle: "Before you start.",
-  faq1Question: "Is the full agent available now?",
+  faq1Question: "What can the agent do now?",
   faq1Answer:
-    "The beta currently offers individual AI features, including ingredient entry and recipes from your inventory. The unified agent that connects context, planning, and actions is still in development. The interactive concept above is not a live app screen.",
+    "The 0.2.0 beta supports multi-step kitchen tasks: checking and adding stock, finding or generating recipes, preparing shopping, planning meals and recording cooking. It asks when it needs clarification, requests confirmation for important changes, and keeps inspectable action records with undo for supported changes. Pause or resume tasks and keep the app in the foreground while they run; cloud background execution is not available. The demo above uses sample data, not live AI.",
   faq2Question: "How do I get an invite code?",
   faq2Answer:
     "The maintainer is inviting a small group of testers. Downloading the APK doesn't provide an invite code. Contact the maintainer through the project feedback page to ask about the beta.",
@@ -240,7 +240,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Public beta. An invite code is required. Install over the existing app to preserve local data.",
+  en: "Multi-step kitchen agent, action history and undo, plus refreshed app dialogs. Invite required; install over the existing app to keep local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>

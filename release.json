@@ -1,12 +1,12 @@
 {
-  "version": "0.1.9",
-  "build": 12,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.1.9-build12/mise-v0.1.9-build12-ai-ledger.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.1.9-build12",
-  "sizeBytes": 68246033,
-  "sha256": "83a14c8171eee47a1c3a20ef7fba7e7c8086f7e35830103847de42a7e618176e",
+  "version": "0.2.0",
+  "build": 13,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.0-build13/mise-v0.2.0-build13-kitchen-agent.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.0-build13",
+  "sizeBytes": 68393729,
+  "sha256": "427d272065fc00bd6689b81a64ee1b098346e0f764590ac63b9f92d1efbd6372",
   "releaseNotes": {
-    "zh": "新增 AI 点数、Token 用量与账本。需要邀请码；请覆盖安装以保留本地数据。",
-    "en": "New: AI credits, token usage and ledger history. An invite code is required. Install over the existing app to preserve local data."
+    "zh": "新增多步厨房 Agent、操作记录与撤销，优化全 App 弹窗。需要邀请码；请覆盖安装以保留本地数据。",
+    "en": "Multi-step kitchen agent, action history and undo, plus refreshed app dialogs. Invite required; install over the existing app to keep local data."
   }
 }
