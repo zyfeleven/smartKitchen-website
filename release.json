@@ -1,12 +1,12 @@
 {
-  "version": "0.2.1",
-  "build": 14,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.1-build14/mise-v0.2.1-build14-agent-media.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.1-build14",
-  "sizeBytes": 68435381,
-  "sha256": "c75f3cfafa144bc427a4b9740ca02e430f49574adc77516adaf6b88710926dca",
+  "version": "0.2.2",
+  "build": 15,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.2-build15/mise-v0.2.2-build15-adaptive-ui.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.2-build15",
+  "sizeBytes": 69465094,
+  "sha256": "749b7fe2bc9236052fb7bdb67e743282dcac1a9e0b205ae7ffb0646a5dffad31",
   "releaseNotes": {
-    "zh": "助手新增拍照识别与语音转文字，支持健身模式营养估算。入库前确认，操作可撤销。需要邀请码；请覆盖安装以保留本地数据。",
-    "en": "Agent photo input and editable voice dictation, plus Fitness mode nutrition estimates. Review before adding stock and undo supported changes. Invite required; install over the existing app to keep local data."
+    "zh": "修复底栏遮挡，改善大字体、按钮和弹窗适配。新增可选的助手本机记忆，可查看、编辑或忘记。需要邀请码；请覆盖安装以保留本地数据。",
+    "en": "Safe-area fixes for bottom navigation, larger text and dialogs. Optional device memory with review, editing and forgetting. Invite required; install over the existing app to keep local data."
   }
 }
