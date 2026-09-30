@@ -57,3 +57,36 @@ storage, release-manifest failure and no-JavaScript fallback. Keep browser evide
 ## Deployment
 
 The site is deployed from the `main` branch root through GitHub Pages.
+
+### Hong Kong HTTPS mirror
+
+The mirror uses `https://8.217.241.184/site/`; the backend continues to use `/mise/`.
+The mirror serves its APK at `/site/downloads/`, so downloading from this entry does not
+require a client connection to GitHub. GitHub Pages and GitHub Release remain available.
+
+`deploy/hongkong/sync_site.py` reads public `main` at a pinned commit, copies only approved
+HTML/CSS/JS/manifest and image paths, and checks APK size and SHA-256 before publishing.
+It rewrites only the mirror's generated download URLs and social metadata; repository
+`release.json` still points to GitHub. Both static download links work without JavaScript.
+An invalid manifest or failed download leaves the previously published website active.
+Old APK URLs remain available. The public mirror includes no App/backend source, secrets,
+invite workbooks or private release artifacts.
+
+The root-owned sync script is installed at `/usr/local/lib/mise-site/sync_site.py`.
+The `mise-site-sync` systemd service runs as `www-data`, with writes limited to
+`/var/www/mise-site`; its timer checks for updates every ten minutes.
+It never executes scripts from the downloaded repository. Changes to the sync program
+itself require a separate reviewed installation; a regular website push cannot update it.
+
+Include `deploy/hongkong/nginx-site.conf` in the existing HTTPS server block after saving
+the current Nginx configuration. Run `nginx -t` before reloading; do not replace backend
+locations or TLS/ACME settings. Install the service/timer only after a successful first sync.
+Operational checks: `systemctl status mise-site-sync.timer`,
+`journalctl -u mise-site-sync.service`, and `curl https://8.217.241.184/site/release.json`.
+To sync immediately: `systemctl start mise-site-sync.service`.
+To roll back, pause the timer and atomically point `/var/www/mise-site/current` at a retained
+directory under `releases/`; APKs remain in `downloads/`. Keep disk usage under review.
+
+Run deployment validation with `python -m unittest discover -s deploy/hongkong -p 'test_*.py'`.
+After each release, verify both Pages and the mirror, including the mirror APK SHA-256,
+two download links, languages, fallback behavior and backend health.

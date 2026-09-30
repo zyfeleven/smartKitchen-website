@@ -375,9 +375,12 @@ fetch("release.json", { cache: "no-cache" })
       "https://github.com/zyfeleven/smartKitchen-website/releases/download/";
     const releaseRoot =
       "https://github.com/zyfeleven/smartKitchen-website/releases/tag/";
+    const isMirrorAsset =
+      window.location.origin === "https://8.217.241.184" &&
+      /^https:\/\/8\.217\.241\.184\/site\/downloads\/mise-v\d+\.\d+\.\d+-build\d+-[a-z0-9-]+\.apk$/.test(data.apkUrl);
     if (
       typeof data.apkUrl !== "string" ||
-      !data.apkUrl.startsWith(assetRoot) ||
+      (!data.apkUrl.startsWith(assetRoot) && !isMirrorAsset) ||
       !data.apkUrl.endsWith(".apk") ||
       typeof data.releaseUrl !== "string" ||
       !data.releaseUrl.startsWith(releaseRoot) ||

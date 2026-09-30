@@ -1,0 +1,18 @@
+[Unit]
+Description=Sync verified public Mise website and Android download
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=www-data
+Group=www-data
+ExecStart=/usr/bin/python3 /usr/local/lib/mise-site/sync_site.py
+TimeoutStartSec=300
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/www/mise-site
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+UMask=0022
