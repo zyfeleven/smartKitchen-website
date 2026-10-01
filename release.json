@@ -1,12 +1,12 @@
 {
-  "version": "0.2.3",
-  "build": 17,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.3-build17/mise-v0.2.3-build17-agent-ui.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.3-build17",
-  "sizeBytes": 69456174,
-  "sha256": "97b29292a48a3fa65931718a62bcffc4ab266ba292d73bf58d80f437bbb48b7c",
+  "version": "0.2.4",
+  "build": 18,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.4-build18/mise-v0.2.4-build18-agent-workflows.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.4-build18",
+  "sizeBytes": 69486994,
+  "sha256": "7e64e1811ed35ee2ccb5fce10807d7c1bed1ef399a78c5ca8adeed8d501a919f",
   "releaseNotes": {
-    "zh": "助手界面更简洁，按钮和面板配色更柔和，保留清晰反馈与足够点击面积。历史、新对话和当前任务控制更易找到，操作详情与撤销分开。需要邀请码；请覆盖安装以保留本地数据。",
-    "en": "Simpler Agent navigation, softer buttons with clear touch feedback. Easier access to history, new chats and task controls, with separate details and undo. Invite required; install over the existing app to keep local data."
+    "zh": "新增采购入库、清冰箱选菜和健身备餐三个工作流，改进任务恢复、操作记录与撤销，支持自愿提交诊断反馈。保留柔和界面。需要邀请码；请覆盖安装保留本地数据。",
+    "en": "Three workflows for groceries, fridge ingredients and fitness meals, with task recovery, clearer action records and voluntary diagnostic feedback. Keeps the soft UI. Invite required; install over the existing app to keep local data."
   }
 }
