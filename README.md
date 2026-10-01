@@ -18,7 +18,7 @@ Open `http://localhost:8090`. Use a different port if it is already occupied.
 
 ## Product positioning
 
-Mise 0.2.3 simplifies Agent navigation, softens button and panel styling and separates task details from undo. Device-safe layout, optional local memory, photo input, voice dictation and nutrition remain available.
+Mise 0.2.4 adds editable grocery, fridge and fitness workflows, durable task recovery, clearer receipts and optional diagnostic feedback. Soft UI, local memory, photo input, voice dictation and nutrition remain available.
 It includes foreground multi-step kitchen agent tasks, clarification, reviewed writes,
 inspectable action receipts and conflict-aware undo for supported changes. Tasks can pause/resume;
 do not promise cloud background execution, accounts or kitchen-data sync. Undo does not refund AI credits.

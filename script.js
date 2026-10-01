@@ -58,23 +58,23 @@ const english = {
   todayTitle: "A thoughtful agent starts\nwith an organized kitchen.",
   todayCopy:
     "Tell Mise what you want to get done. It can check stock, find or generate recipes, and prepare shopping and meal plans. Inspect each step and confirm important changes.",
-  cap1Title: "Capture it. Make sense of it.",
+  cap1Title: "Groceries home. Kitchen updated.",
   cap1Copy:
-    "Turn a photo or a few words into ingredient entries. Check names, amounts, and storage locations before adding them.",
+    "Take a photo or describe your groceries. Review names, quantities and storage locations, then save stock and update the matching shopping items.",
   receipt1: "Tomatoes × 3",
   receipt2: "Eggs × 6",
   receiptResult: "Ready for your review",
-  cap2Title: "Fresh ideas. Familiar ingredients.",
+  cap2Title: "Look in the fridge. Find dinner.",
   cap2Copy:
-    "Generate recipes from your inventory or get suggestions from your collection. Choose servings and review stock deductions after cooking.",
+    "Start with ingredients to use soon, your time and serving needs. Choose a menu first; review quantities and deduct stock after you actually cook.",
   recipeVisual: "Your ingredients.\nTonight's menu.",
-  cap3Title: "Shop for the gap.",
+  cap3Title: "Plan a meal around your goals.",
   cap3Copy:
-    "Compare selected recipes with your stock to work out what to buy. Confirm your purchases back into inventory for next time.",
+    "Optionally set nutrition targets per person and meal, compare recipe estimates and portions, then review the menu and combine missing ingredients into a shopping list.",
   shoppingHave: "Eggs, already at home",
   shoppingNeed: "Tomatoes, need 2 more",
   phaseCurrent: "IN BETA",
-  phaseCurrentCopy: "Multi-step agent, action history, undo and AI credit ledger",
+  phaseCurrentCopy: "Three useful workflows, task recovery, action records and optional feedback",
   phaseNext: "BEING REFINED",
   phaseNextCopy: "More natural conversations and more reliable complex tasks",
   phaseLater: "UP NEXT",
@@ -93,7 +93,7 @@ const english = {
   faqTitle: "Before you start.",
   faq1Question: "What can the agent do now?",
   faq1Answer:
-    "The beta supports multi-step kitchen tasks: checking and adding stock, finding or generating recipes, preparing shopping, planning meals and recording cooking. It asks when it needs clarification, requests confirmation for important changes, and keeps inspectable action records with undo for supported changes. Pause or resume tasks and keep the app in the foreground while they run; cloud background execution is not available. The demo above uses sample data, not live AI.",
+    "Version 0.2.4 adds editable grocery, fridge and fitness workflows. The agent asks questions, prepares changes for review and shows saved results with undo for supported actions. Nutrition values are estimates, not a full-day intake assessment. Resume interrupted tasks and keep the app in the foreground while they run; cloud background execution is not available. Optional task feedback is previewed before sending and costs no AI credits. The demo above uses sample data, not live AI.",
   faq2Question: "How do I get an invite code?",
   faq2Answer:
     "The maintainer is inviting a small group of testers. Downloading the APK doesn't provide an invite code. Contact the maintainer through the project feedback page to ask about the beta.",
@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Simpler Agent navigation, softer buttons with clear touch feedback. Easier access to history, new chats and task controls, with separate details and undo. Invite required; install over the existing app to keep local data.",
+  en: "Three workflows for groceries, fridge ingredients and fitness meals, with task recovery, clearer action records and voluntary diagnostic feedback. Keeps the soft UI. Invite required; install over the existing app to keep local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
