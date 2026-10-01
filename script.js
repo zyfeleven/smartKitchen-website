@@ -93,14 +93,14 @@ const english = {
   faqTitle: "Before you start.",
   faq1Question: "What can the agent do now?",
   faq1Answer:
-    "The 0.2.0 beta supports multi-step kitchen tasks: checking and adding stock, finding or generating recipes, preparing shopping, planning meals and recording cooking. It asks when it needs clarification, requests confirmation for important changes, and keeps inspectable action records with undo for supported changes. Pause or resume tasks and keep the app in the foreground while they run; cloud background execution is not available. The demo above uses sample data, not live AI.",
+    "The beta supports multi-step kitchen tasks: checking and adding stock, finding or generating recipes, preparing shopping, planning meals and recording cooking. It asks when it needs clarification, requests confirmation for important changes, and keeps inspectable action records with undo for supported changes. Pause or resume tasks and keep the app in the foreground while they run; cloud background execution is not available. The demo above uses sample data, not live AI.",
   faq2Question: "How do I get an invite code?",
   faq2Answer:
     "The maintainer is inviting a small group of testers. Downloading the APK doesn't provide an invite code. Contact the maintainer through the project feedback page to ask about the beta.",
   feedbackLink: "Project feedback ↗",
   faq3Question: "Does the beta cost anything?",
   faq3Answer:
-    "There is no top-up or payment flow currently. AI features use beta credits. The current policy grants each invite an initial 100 credits and deducts points when a feature succeeds. Contact the maintainer if you run out; manual features remain available.",
+    "There is no top-up or payment flow currently. AI features use beta credits. The initial allowance and expiry depend on your invite; check the invitation and your balance in the app. Points are deducted according to the feature rules when it succeeds. Contact the maintainer if you run out; manual features remain available.",
   faq4Question: "Can I restore my kitchen on another phone?",
   faq4Answer:
     "There are no accounts or cloud kitchen backups yet. Inventory, recipes, and cooking history live on your device; uninstalling or clearing app data may remove them. Install updates over the existing app. The server retains invite, usage, and credit records, and caches AI results for about 24 hours.",
