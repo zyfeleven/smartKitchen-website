@@ -1,12 +1,12 @@
 {
   "version": "0.2.4",
-  "build": 18,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.4-build18/mise-v0.2.4-build18-agent-workflows.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.4-build18",
-  "sizeBytes": 69486994,
-  "sha256": "7e64e1811ed35ee2ccb5fce10807d7c1bed1ef399a78c5ca8adeed8d501a919f",
+  "build": 19,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.4-build19/mise-v0.2.4-build19-brand-keyboard.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.4-build19",
+  "sizeBytes": 78825788,
+  "sha256": "21c34debca500fced0f27d5dba30033ea9907a36569fca79b4d416072b56be84",
   "releaseNotes": {
-    "zh": "新增采购入库、清冰箱选菜和健身备餐三个工作流，改进任务恢复、操作记录与撤销，支持自愿提交诊断反馈。保留柔和界面。需要邀请码；请覆盖安装保留本地数据。",
-    "en": "Three workflows for groceries, fridge ingredients and fitness meals, with task recovery, clearer action records and voluntary diagnostic feedback. Keeps the soft UI. Invite required; install over the existing app to keep local data."
+    "zh": "启用全新对话餐碗 Logo，修复打字时顶部标识消失，改进语音权限与提示。语音转写需要设备支持。需要邀请码；请覆盖安装保留本地数据。",
+    "en": "New Table Talk logo, a stable header while typing, and clearer voice permissions and notices. Transcription requires device support. Invite required; install over the existing app to keep local data."
   }
 }
