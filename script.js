@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "New Table Talk logo, a stable header while typing, and clearer voice permissions and notices. Transcription requires device support. Invite required; install over the existing app to keep local data.",
+  en: "Weekly menus, reviewed Agent edits, local backup/restore and an expiry brief. Confirm actual use before deducting stock. Manual tools use no AI credits; keep unencrypted backups private. Invite required; install over the existing app to retain data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>

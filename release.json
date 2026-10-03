@@ -1,12 +1,12 @@
 {
-  "version": "0.2.4",
-  "build": 19,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.4-build19/mise-v0.2.4-build19-brand-keyboard.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.4-build19",
-  "sizeBytes": 78825788,
-  "sha256": "21c34debca500fced0f27d5dba30033ea9907a36569fca79b4d416072b56be84",
+  "version": "0.2.5",
+  "build": 20,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.5-build20/mise-v0.2.5-build20-weekly-kitchen.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.5-build20",
+  "sizeBytes": 78932812,
+  "sha256": "9bc05afc8fb21c44943aa57d823245f56ba607772b8eebd22633ca4d46e6f91d",
   "releaseNotes": {
-    "zh": "启用全新对话餐碗 Logo，修复打字时顶部标识消失，改进语音权限与提示。语音转写需要设备支持。需要邀请码；请覆盖安装保留本地数据。",
-    "en": "New Table Talk logo, a stable header while typing, and clearer voice permissions and notices. Transcription requires device support. Invite required; install over the existing app to keep local data."
+    "zh": "新增本周菜单、已有数据的 Agent 编辑、本机备份恢复和临期提示。做完后核对实际用量再扣库存。手动操作不消耗 AI 点；备份文件未加密，请妥善保存。需要邀请码，请覆盖安装保留数据。",
+    "en": "Weekly menus, reviewed Agent edits, local backup/restore and an expiry brief. Confirm actual use before deducting stock. Manual tools use no AI credits; keep unencrypted backups private. Invite required; install over the existing app to retain data."
   }
 }
