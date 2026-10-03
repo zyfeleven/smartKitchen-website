@@ -18,6 +18,12 @@ Open `http://localhost:8090`. Use a different port if it is already occupied.
 
 ## Product positioning
 
+The approved brand is the terracotta Table Talk bowl (`#BC542B`). Header, footer and demo avatar
+use `assets/mise-symbol.svg`; favicon uses `assets/mise-mark.svg`. Both derive from the App's
+`assets/brand/mise-symbol.svg` through `scripts/generate-brand.cjs`, which also generates the
+social preview. Preserve the same outline across App and website; do not restore the former
+star as a brand mark. Remaining stars are interface illustrations, not the logo.
+
 Mise 0.2.4 adds editable grocery, fridge and fitness workflows, durable task recovery, clearer receipts and optional diagnostic feedback. Soft UI, local memory, photo input, voice dictation and nutrition remain available.
 It includes foreground multi-step kitchen agent tasks, clarification, reviewed writes,
 inspectable action receipts and conflict-aware undo for supported changes. Tasks can pause/resume;

@@ -188,13 +188,14 @@ h3 {
   gap: 12px;
   width: max-content;
 }
-.brand-star {
-  color: var(--red);
-  width: 29px;
-  height: 29px;
-  stroke-width: 2.6;
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 .wordmark {
+  color: #bc542b;
   font-size: 35px;
   letter-spacing: -2px;
   font-weight: 750;
@@ -992,9 +993,9 @@ footer {
 footer .wordmark {
   font-size: 29px;
 }
-footer .brand-star {
-  width: 24px;
-  height: 24px;
+footer .brand-mark {
+  width: 36px;
+  height: 36px;
 }
 footer > p {
   font-size: 11px;
@@ -1302,9 +1303,9 @@ html[lang="en"] .approach-grid p {
   .wordmark {
     font-size: 31px;
   }
-  .brand-star {
-    width: 25px;
-    height: 25px;
+  .brand-mark {
+    width: 36px;
+    height: 36px;
   }
   .brand-cn {
     font-size: 10px;
