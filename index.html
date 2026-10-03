@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Mise 食序，从你已有的食材出发。体验 AI 入库、库存菜谱和采购管理，一起探索有上下文、由你确认的厨房 Agent。"
+      content="Mise 食序帮你整理食材、安排菜单、补齐购物清单。用厨房助手处理日常琐事，保留每一步的查看与确认。"
     />
     <meta name="theme-color" content="#f7f5ef" />
-    <meta property="og:title" content="Mise 食序 — 一个懂你厨房的 Agent" />
+    <meta property="og:title" content="Mise 食序 — 整理食材，安排每天的饭" />
     <meta
       property="og:description"
-      content="从家里有什么，到今晚做什么。认识 Mise 的厨房 Agent 方向，体验当前 Android 内测。"
+      content="从家里有什么，到每天吃什么。让 Mise 帮你整理食材、安排菜单、补齐购物清单。"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -22,7 +22,7 @@
       property="og:image"
       content="https://zyfeleven.github.io/smartKitchen-website/assets/social-preview.png"
     />
-    <title>Mise 食序 — 一个懂你厨房的 Agent</title>
+    <title>Mise 食序 — 整理食材，安排每天的饭</title>
     <link rel="icon" type="image/svg+xml" href="assets/mise-mark.svg" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -74,8 +74,8 @@
         ><span class="wordmark">mise</span><span class="brand-cn">食序</span></a
       >
       <nav aria-label="主导航" data-i18n-aria="navLabel">
-        <a href="#agent" data-i18n="navAgent">认识 Agent</a
-        ><a href="#today" data-i18n="navToday">现在能做什么</a
+        <a href="#agent" data-i18n="navAgent">看看怎么用</a
+        ><a href="#today" data-i18n="navToday">厨房里的日常</a
         ><a href="#questions" data-i18n="navQuestions">常见问题</a>
       </nav>
       <div class="header-actions">
@@ -98,17 +98,8 @@
           <p class="eyebrow">
             <span class="status-dot"></span> YOUR KITCHEN AGENT
           </p>
-          <h1>
-            <span data-i18n="heroLine1">一个懂你</span><br /><span
-              data-i18n="heroLine2"
-              >厨房的</span
-            >
-            <em>Agent.</em>
-          </h1>
-          <p class="hero-description" data-i18n="heroCopy">
-            从「家里有什么」到「今晚做什么」。Mise
-            把食材、菜谱与采购联系起来，让下一步有据可依。
-          </p>
+          <h1><span data-i18n="heroLine1">从家里有什么，</span><br><span data-i18n="heroLine2">到每天吃什么。</span></h1>
+          <p class="hero-description" data-i18n="heroCopy">让 Mise 帮你整理食材、安排菜单、补齐购物清单。需要你决定时，它会停下来问你。</p>
           <div class="hero-actions">
             <a
               class="button"
@@ -117,14 +108,14 @@
               ><span data-i18n="heroCta">体验 Android 内测</span
               ><svg class="icon"><use href="#i-arrow" /></svg></a
             ><a class="text-link" href="#agent"
-              ><span data-i18n="heroDemo">看看它如何思考</span
+              ><span data-i18n="heroDemo">看看它怎么帮你</span
               ><span aria-hidden="true">↓</span></a
             >
           </div>
           <p class="hero-note">
             <span class="tiny-star">✳</span
             ><span data-i18n="heroNote"
-              >厨房 Agent 已开放内测：说出目标，一步步完成。</span
+              >Android 内测已开放。手动管理免费使用，AI 功能需邀请码。</span
             >
           </p>
           <div class="hero-signature">
@@ -134,7 +125,7 @@
         </div>
         <div class="demo-wrap" id="agent">
           <div class="demo-topline">
-            <span data-i18n="demoLabel">AGENT 工作流预览</span
+            <span data-i18n="demoLabel">跟着一个例子试试看</span
             ><span class="demo-caption" data-i18n="demoCaption"
               >交互示意 · 非实时 AI</span
             >
@@ -150,7 +141,7 @@
               </div>
               <span class="context-badge"
                 ><span class="status-dot"></span
-                ><span data-i18n="contextBadge">带着上下文</span></span
+                ><span data-i18n="contextBadge">结合现有食材</span></span
               >
             </div>
             <div
@@ -187,7 +178,7 @@
             </p>
             <div class="context-heading">
               <span class="micro-label" data-i18n="contextTitle"
-                >01 / 看看厨房</span
+                >先看看家里有什么</span
               ><span data-i18n="sampleData">示例食材</span>
             </div>
             <div class="ingredients" id="demoIngredients">
@@ -268,9 +259,7 @@
                 </svg>
               </div>
               <div>
-                <p class="micro-label" data-i18n="planTitle">
-                  02 / 有了一个主意
-                </p>
+                <p class="micro-label" data-i18n="planTitle">再安排一餐</p>
                 <h2 id="demoMeal">菠菜鸡蛋炒饭</h2>
                 <p id="demoTags">约 20 分钟 · 1 人份 · 无需添购</p>
               </div>
@@ -286,7 +275,7 @@
               ><svg class="icon"><use href="#i-arrow" /></svg>
             </button>
             <div class="action-panel" id="actionPanel" hidden>
-              <p class="micro-label" data-i18n="actionsTitle">03 / 由你确认</p>
+              <p class="micro-label" data-i18n="actionsTitle">核对后再保存</p>
               <p id="demoAction">保存这份菜谱；做饭时再核对实际食材用量。</p>
               <button
                 type="button"
@@ -304,7 +293,7 @@
       </section>
       <div class="context-strip">
         <div class="section-shell">
-          <span data-i18n="stripTitle">好建议，始于了解。</span>
+          <span data-i18n="stripTitle">从你的食材和习惯出发。</span>
           <div>
             <span
               ><svg class="icon"><use href="#i-box" /></svg
@@ -324,44 +313,38 @@
       </div>
       <section class="section-shell section-space approach" id="approach">
         <div class="section-intro">
-          <p class="eyebrow" data-i18n="approachEyebrow">
-            一个 Agent，一条完整的思路
-          </p>
-          <h2 data-i18n="approachTitle">
-            让厨房里的信息，<br />变成可执行的下一步。
-          </h2>
-          <p data-i18n="approachCopy">从了解厨房到提出建议，再到确认后保存。Mise 把这些步骤连起来，遇到不清楚的地方先问你。</p>
+          <p class="eyebrow" data-i18n="approachEyebrow">你的厨房助手</p>
+          <h2 data-i18n="approachTitle">说出想做的事，<br>一起把它完成。</h2>
+          <p data-i18n="approachCopy">不用先学会所有功能。从一条消息开始，Mise 会查看相关记录、提出建议，并在需要时向你提问。</p>
         </div>
         <div class="approach-grid">
           <article>
             <div class="step-head">
               <span>01</span><svg class="icon"><use href="#i-box" /></svg>
             </div>
-            <h3 data-i18n="step1Title">先了解，再建议。</h3>
+            <h3 data-i18n="step1Title">先看看家里有什么</h3>
             <p data-i18n="step1Copy">
               从库存数量、临期食材和这顿饭的需求出发，让推荐贴近你今天的实际情况。
             </p>
-            <span class="step-note" data-i18n="step1Note">食材是上下文</span>
+            <span class="step-note" data-i18n="step1Note">使用你记录的库存</span>
           </article>
           <article>
             <div class="step-head">
               <span>02</span><svg class="icon"><use href="#i-book" /></svg>
             </div>
-            <h3 data-i18n="step2Title">把想法变成方案。</h3>
+            <h3 data-i18n="step2Title">安排适合你的饭菜</h3>
             <p data-i18n="step2Copy">
               一道适合的菜、用得到的食材、还缺的东西。建议背后的取舍，也应该说清楚。
             </p>
-            <span class="step-note" data-i18n="step2Note">建议有来由</span>
+            <span class="step-note" data-i18n="step2Note">结合人数、口味和时间</span>
           </article>
           <article>
             <div class="step-head">
               <span>03</span><svg class="icon"><use href="#i-check" /></svg>
             </div>
-            <h3 data-i18n="step3Title">最后一步，由你决定。</h3>
-            <p data-i18n="step3Copy">
-              保存菜谱、补充购物单、记录做饭。计划里的操作先让你查看、调整，再执行。
-            </p>
-            <span class="step-note" data-i18n="step3Note">行动可确认</span>
+            <h3 data-i18n="step3Title">每次更改都有记录</h3>
+            <p data-i18n="step3Copy">入库、保存菜单和扣减库存前先核对。可查看每一步的结果，并撤销支持的更改；菜谱和购物清单的自动保存可在设置调整。</p>
+            <span class="step-note" data-i18n="step3Note">重要操作由你确认</span>
           </article>
         </div>
       </section>
@@ -370,11 +353,9 @@
           <div class="today-heading">
             <div>
               <p class="eyebrow" data-i18n="todayEyebrow">今天，就能开始用</p>
-              <h2 data-i18n="todayTitle">
-                Agent 的基础，<br />是一间有条理的厨房。
-              </h2>
+              <h2 data-i18n="todayTitle">买菜、做饭、安排一周。</h2>
             </div>
-            <p data-i18n="todayCopy">告诉 Mise 你想完成什么，它会查看库存、寻找或生成菜谱、整理采购和用餐安排。每一步都能查看，重要改动由你确认。</p>
+            <p data-i18n="todayCopy">三个常见场景，从家里的食材开始。你也可以直接告诉助手一个更具体的需求。</p>
           </div>
           <div class="capabilities">
             <article class="capability">
@@ -397,7 +378,7 @@
             <article class="capability">
               <span class="capability-no">B / IDEAS</span>
               <h3 data-i18n="cap2Title">先看看冰箱，再决定晚餐。</h3>
-              <p data-i18n="cap2Copy">优先考虑快用完保鲜期的食材，结合你的时间和人数选菜。先选好菜单，真正做完后再核对用量、扣减库存。</p>
+              <p data-i18n="cap2Copy">优先考虑还没过期、可以尽早用掉的食材，结合人数和时间选菜。做完后再核对实际用量、更新库存。</p>
               <div class="recipe-visual" aria-hidden="true">
                 <svg class="icon"><use href="#i-book" /></svg
                 ><span data-i18n="recipeVisual">你的食材<br />今天的菜单</span
@@ -407,7 +388,7 @@
             <article class="capability">
               <span class="capability-no">C / FOLLOW-THROUGH</span>
               <h3 data-i18n="cap3Title">按你的目标，安排这一餐。</h3>
-              <p data-i18n="cap3Copy">选填每人每餐的营养目标，查看菜谱营养估算与份量对比。核对菜单，再把缺少的食材合并到采购清单。</p>
+              <p data-i18n="cap3Copy">告诉助手要安排哪些日期、餐次和人数，再补充口味或营养目标。查看营养估算、保存菜单，并补齐需要买的食材。</p>
               <div class="shopping-visual" aria-hidden="true">
                 <span
                   ><i class="check-box checked">✓</i
@@ -424,7 +405,7 @@
               <span class="phase current" data-i18n="phaseCurrent"
                 >正在内测</span
               >
-              <p data-i18n="phaseCurrentCopy">三个实用工作流、任务恢复、操作记录与自愿反馈</p>
+              <p data-i18n="phaseCurrentCopy">食材管理、本周菜单、AI 助手与本机备份</p>
             </div>
             <div>
               <span class="phase next" data-i18n="phaseNext">持续打磨</span>
@@ -432,7 +413,7 @@
             </div>
             <div>
               <span class="phase later" data-i18n="phaseLater">后续方向</span>
-              <p data-i18n="phaseLaterCopy">账号、云端备份与跨设备恢复</p>
+              <p data-i18n="phaseLaterCopy">账号和跨设备云同步</p>
             </div>
           </div>
         </div>
@@ -477,7 +458,7 @@
         <div class="faq-list">
           <details>
             <summary data-i18n="faq1Question">Agent 现在能做什么？</summary>
-            <p data-i18n="faq1Answer">0.2.4 新增采购入库、清冰箱选菜和健身备餐入口，你可以继续修改需求。助手会提问、准备操作并请你核对，执行后可查看实际结果并撤销支持的改动。营养数据为估算，不能代表全天摄入。任务中断后可继续，执行时请保持 App 在前台；暂不支持云端后台运行。任务反馈先预览、确认后才上传，不扣 AI 点。上方演示使用示例数据，不是实时 AI。</p>
+            <p data-i18n="faq1Answer">助手可以查看库存、生成或修改菜谱、安排菜单和整理购物清单。执行记录可查看，支持的更改可撤销。执行时请保持 App 在前台，中断后可继续。营养数据是估算，不代表全天摄入。页面演示使用示例数据，不会调用 AI。</p>
           </details>
           <details>
             <summary data-i18n="faq2Question">怎么获得邀请码？</summary>
@@ -499,11 +480,7 @@
           </details>
           <details>
             <summary data-i18n="faq4Question">数据可以换手机恢复吗？</summary>
-            <p data-i18n="faq4Answer">
-              当前没有账号或云端厨房数据备份。库存、菜谱和做饭记录保存在本机；卸载或清除
-              App 数据可能使它们丢失。更新时请覆盖安装。服务器会保留邀请码、AI
-              用量与点数记录，AI 结果缓存保留约 24 小时。
-            </p>
+            <p data-i18n="faq4Answer">可以在设置里导出本机备份，再把文件传到另一台手机恢复。备份未加密，请妥善保管；恢复会替换目标手机上的数据。邀请码和 AI 点数不包含在备份中。目前没有账号和自动云同步。</p>
           </details>
           <details>
             <summary data-i18n="faq5Question">支持 iPhone 吗？</summary>
@@ -517,14 +494,9 @@
       <section class="download-section" id="download">
         <div class="section-shell download-inner">
           <div>
-            <p class="eyebrow" data-i18n="downloadEyebrow">
-              从一顿饭开始，一起把 Mise 做好
-            </p>
-            <h2 data-i18n="downloadTitle">给你的厨房，<br />留一点新可能。</h2>
-            <p data-i18n="downloadCopy">
-              我们正在寻找一小批愿意真实使用、分享反馈的内测用户。让下一步的
-              Agent，从真实的一日三餐长出来。
-            </p>
+            <p class="eyebrow" data-i18n="downloadEyebrow">开始体验</p>
+            <h2 data-i18n="downloadTitle">让下一顿饭，<br>更好安排一点。</h2>
+            <p data-i18n="downloadCopy">下载 Android 内测版，先记下家里的食材。需要 AI 助手时，再填写邀请码。更新请覆盖安装，保留原有数据。</p>
           </div>
           <div class="download-card">
             <div class="download-card-top">
@@ -553,8 +525,8 @@
               >查看版本说明 ↗</a
             >
             <div class="download-requirements">
-              <span data-i18n="inviteRequired">需要邀请码</span
-              ><span data-i18n="iosStatus">iOS 暂未开放</span>
+              <span data-i18n="inviteRequired">AI 功能需邀请码</span
+              ><span data-i18n="iosStatus">iPhone 暂无公开下载</span>
             </div>
           </div>
         </div>

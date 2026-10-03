@@ -5,59 +5,59 @@ const english = {
   footerPrivacy: "Privacy",
   footerSupport: "Help",
   skip: "Skip to content",
-  navAgent: "Meet the agent",
-  navToday: "Available today",
+  navAgent: "How it works",
+  navToday: "Everyday cooking",
   navQuestions: "Questions",
   joinBeta: "Try the beta",
-  heroLine1: "Your kitchen.",
-  heroLine2: "Your",
+  heroLine1: "From what you have",
+  heroLine2: "to what you cook.",
   heroCopy:
-    "From what you have to what you could make. Mise connects ingredients, recipes, and shopping, so the next step starts with your kitchen.",
+    "Let Mise organize ingredients, plan meals and fill your shopping list. When it needs your input, it stops to ask.",
   heroCta: "Try the Android beta",
-  heroDemo: "See the thinking",
+  heroDemo: "See how Mise helps",
   heroNote:
-    "The kitchen agent is in beta. Start with a goal and work through it together.",
-  demoLabel: "THE AGENT, IN CONTEXT",
+    "Android beta available. Manual tools are free to use; AI features need an invite code.",
+  demoLabel: "TRY AN EXAMPLE",
   demoCaption: "Interactive demo · not live AI",
   agentSubtitle: "A small plan for tonight.",
-  contextBadge: "Kitchen context",
+  contextBadge: "Using your ingredients",
   scenarioQuick: "Dinner in 20",
   scenarioFresh: "Use it while fresh",
   scenarioShop: "Buy only what's missing",
-  contextTitle: "01 / READ THE KITCHEN",
+  contextTitle: "WHAT IS AT HOME",
   sampleData: "Sample ingredients",
-  planTitle: "02 / A LITTLE INSPIRATION",
+  planTitle: "A MEAL TO MAKE",
   planToggle: "See the next step",
-  actionsTitle: "03 / YOUR CALL",
+  actionsTitle: "REVIEW BEFORE SAVING",
   confirmDemo: "Confirm in this demo",
   demoConfirmed: "Example confirmed. Your real kitchen data is unchanged.",
   demoFootnote:
     "A workflow illustrated with sample ingredients. This demo makes no AI calls and never reads or changes your data. Try the real workflow in the app.",
-  stripTitle: "Good ideas start with context.",
+  stripTitle: "Start with your ingredients and preferences.",
   stripInventory: "What you have",
   stripTime: "Time for tonight",
   stripFresh: "What's fresh",
   stripChoice: "Your choices",
-  approachEyebrow: "ONE AGENT. A CONNECTED WAY OF THINKING.",
-  approachTitle: "Turn kitchen context\ninto a useful next step.",
+  approachEyebrow: "YOUR KITCHEN ASSISTANT",
+  approachTitle: "Tell Mise what you need.\nWork through it together.",
   approachCopy:
-    "From understanding your kitchen to suggestions and reviewed changes, Mise connects the steps and asks when it needs your input.",
-  step1Title: "Understand, then suggest.",
+    "Start with a message. Mise checks relevant records, suggests the next steps and asks when it needs your input.",
+  step1Title: "Check what is at home",
   step1Copy:
     "Start with quantities, ingredients to use soon, and what you need from this meal. Make the suggestion fit the day you're actually having.",
-  step1Note: "Context comes first",
-  step2Title: "Make a workable plan.",
+  step1Note: "Based on your recorded stock",
+  step2Title: "Plan food that fits your day",
   step2Copy:
     "A dish that fits, ingredients you can use, and anything that's missing. The reasons behind the choice should be clear, too.",
-  step2Note: "A reason behind the recipe",
-  step3Title: "Keep the final say.",
+  step2Note: "Servings, preferences and time",
+  step3Title: "Keep track of every change",
   step3Copy:
-    "Save a recipe, prepare a shopping list, log a meal. Review and adjust the proposed actions before anything changes.",
-  step3Note: "Actions you can review",
+    "Review stock entries, menus and stock deductions before saving. Inspect results and undo supported changes. Automatic saving of recipes and shopping lists is adjustable in Settings.",
+  step3Note: "You approve important changes",
   todayEyebrow: "SOMETHING USEFUL, RIGHT NOW",
-  todayTitle: "A thoughtful agent starts\nwith an organized kitchen.",
+  todayTitle: "Groceries, dinner and the week ahead.",
   todayCopy:
-    "Tell Mise what you want to get done. It can check stock, find or generate recipes, and prepare shopping and meal plans. Inspect each step and confirm important changes.",
+    "Three everyday ways to start with your kitchen. Or tell Mise exactly what you want to get done.",
   cap1Title: "Groceries home. Kitchen updated.",
   cap1Copy:
     "Take a photo or describe your groceries. Review names, quantities and storage locations, then save stock and update the matching shopping items.",
@@ -70,15 +70,15 @@ const english = {
   recipeVisual: "Your ingredients.\nTonight's menu.",
   cap3Title: "Plan a meal around your goals.",
   cap3Copy:
-    "Optionally set nutrition targets per person and meal, compare recipe estimates and portions, then review the menu and combine missing ingredients into a shopping list.",
+    "Tell Mise the dates, meals, servings and food preferences you have in mind. Add nutrition targets if you have them. Review estimates, save your menu and add missing ingredients to your list.",
   shoppingHave: "Eggs, already at home",
   shoppingNeed: "Tomatoes, need 2 more",
   phaseCurrent: "IN BETA",
-  phaseCurrentCopy: "Three useful workflows, task recovery, action records and optional feedback",
+  phaseCurrentCopy: "Stock, weekly menus, AI assistance and local backups",
   phaseNext: "BEING REFINED",
   phaseNextCopy: "More natural conversations and more reliable complex tasks",
   phaseLater: "UP NEXT",
-  phaseLaterCopy: "Accounts, cloud backup, and device recovery",
+  phaseLaterCopy: "Accounts and automatic cloud sync",
   trustEyebrow: "USEFUL HELP. CLEAR EXPECTATIONS.",
   trustTitle: "Know what's happening\nat every step.",
   trust1Title: "Review the important changes.",
@@ -93,7 +93,7 @@ const english = {
   faqTitle: "Before you start.",
   faq1Question: "What can the agent do now?",
   faq1Answer:
-    "Version 0.2.4 adds editable grocery, fridge and fitness workflows. The agent asks questions, prepares changes for review and shows saved results with undo for supported actions. Nutrition values are estimates, not a full-day intake assessment. Resume interrupted tasks and keep the app in the foreground while they run; cloud background execution is not available. Optional task feedback is previewed before sending and costs no AI credits. The demo above uses sample data, not live AI.",
+    "Mise can check stock, create or edit recipes, plan meals and prepare shopping lists. Inspect action records and undo supported changes. Keep the app in the foreground while tasks run; interrupted tasks can resume. Nutrition values are estimates, not a full-day assessment. This website demo uses sample data and makes no AI calls.",
   faq2Question: "How do I get an invite code?",
   faq2Answer:
     "The maintainer is inviting a small group of testers. Downloading the APK doesn't provide an invite code. Contact the maintainer through the project feedback page to ask about the beta.",
@@ -103,19 +103,19 @@ const english = {
     "There is no top-up or payment flow currently. AI features use beta credits. The initial allowance and expiry depend on your invite; check the invitation and your balance in the app. Points are deducted according to the feature rules when it succeeds. Contact the maintainer if you run out; manual features remain available.",
   faq4Question: "Can I restore my kitchen on another phone?",
   faq4Answer:
-    "There are no accounts or cloud kitchen backups yet. Inventory, recipes, and cooking history live on your device; uninstalling or clearing app data may remove them. Install updates over the existing app. The server retains invite, usage, and credit records, and caches AI results for about 24 hours.",
+    "Export a local backup in Settings and transfer the file to another phone to restore it. Files are unencrypted; keep them private. Restoring replaces data on the destination phone. Invite codes and AI credits are excluded. Accounts and automatic cloud sync are not available yet.",
   faq5Question: "Is there an iPhone version?",
   faq5Answer:
     "This page currently offers the Android beta APK. There is no public iOS download yet. We'll update this page when one is available.",
-  downloadEyebrow: "LET'S BUILD MISE, ONE MEAL AT A TIME",
-  downloadTitle: "Make a little room\nfor something new.",
+  downloadEyebrow: "GET STARTED",
+  downloadTitle: "Make the next meal\na little easier.",
   downloadCopy:
-    "We're looking for a small group of people to use Mise in their real kitchens and share what works. Help the next version of the agent grow from everyday meals.",
+    "Download the Android beta and start with the ingredients at home. Enter an invite code when you want AI assistance. Install updates over the existing app to keep your data.",
   androidBeta: "ANDROID BETA",
   downloadApk: "Download Android APK",
   releaseDetails: "Read the release notes ↗",
-  inviteRequired: "Invite code required",
-  iosStatus: "iOS not available yet",
+  inviteRequired: "Invite required for AI",
+  iosStatus: "No public iPhone download yet",
   footerCopy: "Good food. A little less kitchen friction.",
   footerFeedback: "Feedback ↗",
 };
@@ -327,12 +327,12 @@ function applyLanguage(nextLanguage) {
   );
   const title =
     language === "zh"
-      ? "Mise 食序 — 一个懂你厨房的 Agent"
-      : "Mise — Your kitchen agent";
+      ? "Mise 食序 — 整理食材，安排每天的饭"
+      : "Mise — Plan meals with what you have";
   const description =
     language === "zh"
-      ? "Mise 食序，从你已有的食材出发。体验 AI 入库、库存菜谱和采购管理，一起探索有上下文、由你确认的厨房 Agent。"
-      : "Start with the ingredients you have. Try AI kitchen tools in the Mise beta and explore a kitchen agent built around context and your decisions.";
+      ? "Mise 食序帮你整理食材、安排菜单、补齐购物清单。用厨房助手处理日常琐事，保留每一步的查看与确认。"
+      : "Keep track of ingredients, plan meals and prepare a shopping list with Mise. See what your kitchen assistant does and stay in control.";
   document.title = title;
   document.querySelector('meta[name="description"]').content = description;
   document.querySelector('meta[property="og:title"]').content = title;

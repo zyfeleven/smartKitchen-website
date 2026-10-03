@@ -18,6 +18,13 @@ Open `http://localhost:8090`. Use a different port if it is already occupied.
 
 ## Product positioning
 
+UI/copy refinement (2026-10-03): lead with everyday kitchen outcomes, use the App's warm
+palette and softer secondary actions, and describe current local backup behavior accurately.
+The hero, feature copy, FAQ and page metadata stay bilingual. Release manifest and APK
+URLs remain on 0.2.5 build 20; website presentation work is not a new App release.
+Local browser checks cover both languages at 320/390/768/1024/1440 widths, both download
+links, no-JavaScript delivery and manifest-failure fallback. Demo content remains illustrative.
+
 The approved brand is the terracotta Table Talk bowl (`#BC542B`). Header, footer and demo avatar
 use `assets/mise-symbol.svg`; favicon uses `assets/mise-mark.svg`. Both derive from the App's
 `assets/brand/mise-symbol.svg` through `scripts/generate-brand.cjs`, which also generates the
