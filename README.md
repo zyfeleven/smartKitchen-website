@@ -24,7 +24,8 @@ use `assets/mise-symbol.svg`; favicon uses `assets/mise-mark.svg`. Both derive f
 social preview. Preserve the same outline across App and website; do not restore the former
 star as a brand mark. Remaining stars are interface illustrations, not the logo.
 
-Mise 0.2.4 build 19 adopts the Table Talk brand and keeps the header visible while typing. Voice input requires a compatible device speech service; unavailable services produce an actionable notice. It includes editable grocery, fridge and fitness workflows, durable task recovery, clearer receipts and optional diagnostic feedback. Soft UI, local memory, photo input, voice dictation and nutrition remain available.
+Mise 0.2.5 build 20 adds weekly menus in Recipes, reviewed edits to existing kitchen data, optional local file backup/restore and a local expiry brief. Manual tools use no AI credits. Backups are unencrypted and manually transferred, with no account or cloud synchronization.
+The previous build 19 adopts the Table Talk brand and keeps the header visible while typing. Voice input requires a compatible device speech service; unavailable services produce an actionable notice. It includes editable grocery, fridge and fitness workflows, durable task recovery, clearer receipts and optional diagnostic feedback. Soft UI, local memory, photo input, voice dictation and nutrition remain available.
 It includes foreground multi-step kitchen agent tasks, clarification, reviewed writes,
 inspectable action receipts and conflict-aware undo for supported changes. Tasks can pause/resume;
 do not promise cloud background execution, accounts or kitchen-data sync. Undo does not refund AI credits.
@@ -79,7 +80,6 @@ The Hong Kong server continues to host only the existing `/mise/` backend.
 Do not re-enable the mirror or expect it to synchronize with a website release.
 Files under `deploy/hongkong/` are historical deployment references, not an active target.
 
-Build 19 APK: 78,825,788 bytes; SHA-256
-`21c34debca500fced0f27d5dba30033ea9907a36569fca79b4d416072b56be84`.
-MuMu Android 12 passed five Maestro flows and three real-keyboard layout cases.
-No physical-device, live transcription or live AI validation is claimed by this release.
+Build 20 APK: 78,932,812 bytes; SHA-256
+`9bc05afc8fb21c44943aa57d823245f56ba607772b8eebd22633ca4d46e6f91d`.
+Artifact identity, signing compatibility and HTTPS checks passed. App unit/RN and menu regressions and bilingual browser flows passed. Build 20 passed four MuMu Android 12 Maestro regression flows and a weekly-menu/native-backup smoke flow. The native file picker opens/cancels and the share sheet launches; MuMu has no compatible share target, so delivery of a backup file was not verified. No physical iPhone/Huawei, live transcription or paid-AI validation is claimed.
