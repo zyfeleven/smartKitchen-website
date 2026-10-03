@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Three workflows for groceries, fridge ingredients and fitness meals, with task recovery, clearer action records and voluntary diagnostic feedback. Keeps the soft UI. Invite required; install over the existing app to keep local data.",
+  en: "New Table Talk logo, a stable header while typing, and clearer voice permissions and notices. Transcription requires device support. Invite required; install over the existing app to keep local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
