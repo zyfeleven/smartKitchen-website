@@ -20,8 +20,7 @@ Open `http://localhost:8090`. Use a different port if it is already occupied.
 
 UI/copy refinement (2026-10-03): lead with everyday kitchen outcomes, use the App's warm
 palette and softer secondary actions, and describe current local backup behavior accurately.
-The hero, feature copy, FAQ and page metadata stay bilingual. Release manifest and APK
-URLs remain on 0.2.5 build 20; website presentation work is not a new App release.
+The hero, feature copy, FAQ and page metadata stay bilingual. The release manifest and APK URLs now point to verified Mise 0.3.0 build 23.
 Local browser checks cover both languages at 320/390/768/1024/1440 widths, both download
 links, no-JavaScript delivery and manifest-failure fallback. Demo content remains illustrative.
 
@@ -90,3 +89,21 @@ Files under `deploy/hongkong/` are historical deployment references, not an acti
 Build 20 APK: 78,932,812 bytes; SHA-256
 `9bc05afc8fb21c44943aa57d823245f56ba607772b8eebd22633ca4d46e6f91d`.
 Artifact identity, signing compatibility and HTTPS checks passed. App unit/RN and menu regressions and bilingual browser flows passed. Build 20 passed four MuMu Android 12 Maestro regression flows and a weekly-menu/native-backup smoke flow. The native file picker opens/cancels and the share sheet launches; MuMu has no compatible share target, so delivery of a backup file was not verified. No physical iPhone/Huawei, live transcription or paid-AI validation is claimed.
+
+
+## Mise 0.3.0 build 23
+
+Kitchen home, readable task progress/questions, reviewed workflow handoffs and manual action history
+now connect everyday kitchen tasks. Weekly menus use a day view. Manual stock changes/deletion,
+recipe deletion and cooking have conflict-safe undo; cooking and deductions commit together.
+Foreground execution, invite credits and local data ownership are unchanged.
+
+APK: 79014328 bytes; SHA-256 `17ba5b376955e2307091d1cb9c5c30526cf9412e608902af589129c9f14d3aa2`. Native verification is recorded in the release notes.
+
+Build 23 acceptance: 162 domain/SQLite and 110 component tests passed. Final signed Android
+upgrade retained earlier test inventory; three Maestro flows plus direct native cancellation/
+history undo checks passed (Maestro input injection stalled on two flows). The same source
+passed all five flows on the isolated test APK. Normal/phone/1.3-font real-keyboard geometry
+passed. TestFlight0.3.0(15) is Testing in the existing internal group. No physical iPhone/Huawei
+or paid-model/real-transcription validation is claimed. Bilingual website checks pass at
+320/390/768/1024/1440px with two links, no-JS and manifest-failure fallback; public APK hash matches.

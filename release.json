@@ -1,12 +1,12 @@
 {
-  "version": "0.2.5",
-  "build": 20,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.2.5-build20/mise-v0.2.5-build20-weekly-kitchen.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.2.5-build20",
-  "sizeBytes": 78932812,
-  "sha256": "9bc05afc8fb21c44943aa57d823245f56ba607772b8eebd22633ca4d46e6f91d",
+  "version": "0.3.0",
+  "build": 23,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.3.0-build23/mise-v0.3.0-build23-kitchen-agent.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.3.0-build23",
+  "sizeBytes": 79014328,
+  "sha256": "17ba5b376955e2307091d1cb9c5c30526cf9412e608902af589129c9f14d3aa2",
   "releaseNotes": {
-    "zh": "新增本周菜单、已有数据的 Agent 编辑、本机备份恢复和临期提示。做完后核对实际用量再扣库存。手动操作不消耗 AI 点；备份文件未加密，请妥善保存。需要邀请码，请覆盖安装保留数据。",
-    "en": "Weekly menus, reviewed Agent edits, local backup/restore and an expiry brief. Confirm actual use before deducting stock. Manual tools use no AI credits; keep unencrypted backups private. Invite required; install over the existing app to retain data."
+    "zh": "0.3 厨房首页、可调整的助手任务与工作流衔接。本周菜单按天查看，库存、菜谱、购物、菜单和做饭支持手动操作记录及冲突保护撤销。手动操作不消耗 AI 点，任务请保持前台运行。覆盖安装保留数据。",
+    "en": "0.3 connects your kitchen home, adjustable Agent tasks and follow-up workflows. Browse menus by day; review and safely undo manual stock, recipe, shopping, menu and cooking actions. Manual tools use no AI credits. Keep tasks in the foreground and install over the existing app to retain data."
   }
 }

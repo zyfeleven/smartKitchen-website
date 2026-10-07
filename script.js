@@ -52,7 +52,7 @@ const english = {
   step2Note: "Servings, preferences and time",
   step3Title: "Keep track of every change",
   step3Copy:
-    "Review stock entries, menus and stock deductions before saving. Inspect results and undo supported changes. Automatic saving of recipes and shopping lists is adjustable in Settings.",
+    "Review stock entries, menus and deductions before saving. Inspect Agent results in the conversation and manual changes in Action history. Undo protects later edits when they conflict.",
   step3Note: "You approve important changes",
   todayEyebrow: "SOMETHING USEFUL, RIGHT NOW",
   todayTitle: "Groceries, dinner and the week ahead.",
@@ -70,11 +70,11 @@ const english = {
   recipeVisual: "Your ingredients.\nTonight's menu.",
   cap3Title: "Plan a meal around your goals.",
   cap3Copy:
-    "Tell Mise the dates, meals, servings and food preferences you have in mind. Add nutrition targets if you have them. Review estimates, save your menu and add missing ingredients to your list.",
+    "Tell Mise the dates, meals, servings and preferences, with nutrition goals if useful. Browse the saved week by day, adjust a meal, fill shopping gaps and record it after cooking.",
   shoppingHave: "Eggs, already at home",
   shoppingNeed: "Tomatoes, need 2 more",
   phaseCurrent: "IN BETA",
-  phaseCurrentCopy: "Stock, weekly menus, AI assistance and local backups",
+  phaseCurrentCopy: "Kitchen home, weekly menus, AI help, action history and local backups",
   phaseNext: "BEING REFINED",
   phaseNextCopy: "More natural conversations and more reliable complex tasks",
   phaseLater: "UP NEXT",
@@ -83,7 +83,7 @@ const english = {
   trustTitle: "Know what's happening\nat every step.",
   trust1Title: "Review the important changes.",
   trust1Copy:
-    "Review changes before saving and inspect the record afterwards. Undo supported actions such as adding stock or saving recipes. If later edits conflict, the app explains why it cannot safely undo them.",
+    "Review before saving and inspect the result afterwards. Manual stock entries, edits, deletion, shopping, menus and cooking have action history and undo. The app explains when later changes prevent a safe undo.",
   trust2Title: "Local records. On-demand AI.",
   trust2Copy:
     "Core inventory and recipe records live on your phone. When you use AI, relevant text, images, or ingredient information is sent to the server and model service for processing.",
@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Weekly menus, reviewed Agent edits, local backup/restore and an expiry brief. Confirm actual use before deducting stock. Manual tools use no AI credits; keep unencrypted backups private. Invite required; install over the existing app to retain data.",
+  en: "0.3 connects your kitchen home, adjustable Agent tasks and follow-up workflows. Browse menus by day; review and safely undo manual stock, recipe, shopping, menu and cooking actions. Manual tools use no AI credits. Keep tasks in the foreground and install over the existing app to retain data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
