@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "0.3 connects your kitchen home, adjustable Agent tasks and follow-up workflows. Browse menus by day; review and safely undo manual stock, recipe, shopping, menu and cooking actions. Manual tools use no AI credits. Keep tasks in the foreground and install over the existing app to retain data.",
+  en: "Simpler settings, inline ingredient suggestions, fewer Agent popups, and clearer AI credits and feedback. Deletion confirmation and unsaved-draft protection remain. Manual tools use no AI credits; Android AI retains existing invitation access. Install over the existing app to retain local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
