@@ -107,3 +107,14 @@ passed all five flows on the isolated test APK. Normal/phone/1.3-font real-keybo
 passed. TestFlight0.3.0(15) is Testing in the existing internal group. No physical iPhone/Huawei
 or paid-model/real-transcription validation is claimed. Bilingual website checks pass at
 320/390/768/1024/1440px with two links, no-JS and manifest-failure fallback; public APK hash matches.
+
+
+## Mise 0.3.3 build 24
+
+UI and copy refinement: inline ingredient suggestions, fewer routine Agent popups,
+clearer credit pages and readable feedback. Existing Android invitation access remains.
+
+APK: 79360913 bytes; SHA-256 `01072665e61b675113aa8acfeca9c48cea9776d6fd928d69d6075dd72e590df1`. Package/version, production HTTPS,
+ZIP integrity and signing-certificate compatibility with build 23 verified.
+Typecheck, 173 unit and 139 RN tests, Expo Doctor 17/17 and mobile web checks passed.
+No physical-device test was performed on this computer.
