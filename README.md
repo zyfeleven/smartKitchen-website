@@ -118,3 +118,14 @@ APK: 79360913 bytes; SHA-256 `01072665e61b675113aa8acfeca9c48cea9776d6fd928d69d6
 ZIP integrity and signing-certificate compatibility with build 23 verified.
 Typecheck, 173 unit and 139 RN tests, Expo Doctor 17/17 and mobile web checks passed.
 No physical-device test was performed on this computer.
+
+
+## Mise 0.3.4 build 25
+
+Agent answer choices, direct common actions and reviewed purchase intake; keyboard-aware
+sheets and consistent page actions. Android invitation access remains unchanged.
+
+APK: 79366745 bytes; SHA-256 `7943ac15788f167c6f17a0047bed2a1b82eb0da1625a0db705e6132b5a097e94`. Package/version, production HTTPS,
+ZIP integrity and signing-certificate compatibility verified. Typecheck,175 unit tests,
+158 RN tests including one isolated timeout retry, Expo Doctor17/17 and mobile web
+checks passed. Physical camera and iOS keyboard interaction have not been tested here.
