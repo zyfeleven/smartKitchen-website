@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Simpler settings, inline ingredient suggestions, fewer Agent popups, and clearer AI credits and feedback. Deletion confirmation and unsaved-draft protection remain. Manual tools use no AI credits; Android AI retains existing invitation access. Install over the existing app to retain local data.",
+  en: "Select suggested Agent answers and start common actions directly. Purchase intake supports typing, camera and photo library, with list confirmation before stocking. Improved keyboard-aware popups and page actions. Android AI retains existing invitation access; install over the existing app to keep local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
