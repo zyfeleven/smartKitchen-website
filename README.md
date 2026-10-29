@@ -129,3 +129,14 @@ APK: 79366745 bytes; SHA-256 `7943ac15788f167c6f17a0047bed2a1b82eb0da1625a0db705
 ZIP integrity and signing-certificate compatibility verified. Typecheck,175 unit tests,
 158 RN tests including one isolated timeout retry, Expo Doctor17/17 and mobile web
 checks passed. Physical camera and iOS keyboard interaction have not been tested here.
+
+
+## Mise 0.3.5 build 26
+
+Compact Agent chat, recipe/menu and quantity improvements, local reminders, and
+request-correlated opt-in diagnostics. Android invitation access is unchanged.
+
+APK: 82160322 bytes; SHA-256 `452d09cf3775c67c4e4f8709a4bd5055747a0fef7738b7b329b749d425239eb0`. Signing certificate matches
+the earlier app. Package/version, ZIP integrity and production HTTPS verified.
+Fixed v5 benchmark120/120 across3 repetitions; live60/60 with no critical failures.
+Physical iOS/Android acceptance remains pending; automated results do not replace it.
