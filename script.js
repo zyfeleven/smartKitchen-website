@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Select suggested Agent answers and start common actions directly. Purchase intake supports typing, camera and photo library, with list confirmation before stocking. Improved keyboard-aware popups and page actions. Android AI retains existing invitation access; install over the existing app to keep local data.",
+  en: "A compact assistant chat with editable drafts while paused, improved recipe/menu decisions and quantity handling, request references in voluntary feedback, and local cooking reminders. Android AI retains existing invitation access; install over the existing app to keep local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>

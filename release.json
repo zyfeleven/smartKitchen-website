@@ -1,12 +1,12 @@
 {
-  "version": "0.3.4",
-  "build": 25,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.3.4-build25/mise-v0.3.4-build25.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.3.4-build25",
-  "sizeBytes": 79366745,
-  "sha256": "7943ac15788f167c6f17a0047bed2a1b82eb0da1625a0db705e6132b5a097e94",
+  "version": "0.3.5",
+  "build": 26,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.3.5-build26/mise-v0.3.5-build26.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.3.5-build26",
+  "sizeBytes": 82160322,
+  "sha256": "452d09cf3775c67c4e4f8709a4bd5055747a0fef7738b7b329b749d425239eb0",
   "releaseNotes": {
-    "zh": "助手提问可直接选答案，常用操作一点即开始；购买食材支持手写、拍照和相册，小票识别后确认清单再入库。优化弹窗键盘布局和页面按钮排列。Android AI 沿用现有邀请码；覆盖安装保留本地数据。",
-    "en": "Select suggested Agent answers and start common actions directly. Purchase intake supports typing, camera and photo library, with list confirmation before stocking. Improved keyboard-aware popups and page actions. Android AI retains existing invitation access; install over the existing app to keep local data."
+    "zh": "助手对话更简洁，暂停时可编辑下一条消息；改进菜谱、菜单和食材数量处理。主动反馈时附带请求编号，方便定位失败原因。支持本地做饭提醒。Android AI 沿用现有邀请码；覆盖安装保留本地数据。",
+    "en": "A compact assistant chat with editable drafts while paused, improved recipe/menu decisions and quantity handling, request references in voluntary feedback, and local cooking reminders. Android AI retains existing invitation access; install over the existing app to keep local data."
   }
 }
