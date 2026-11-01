@@ -140,3 +140,11 @@ APK: 82160322 bytes; SHA-256 `452d09cf3775c67c4e4f8709a4bd5055747a0fef7738b7b329
 the earlier app. Package/version, ZIP integrity and production HTTPS verified.
 Fixed v5 benchmark120/120 across3 repetitions; live60/60 with no critical failures.
 Physical iOS/Android acceptance remains pending; automated results do not replace it.
+
+
+## 2026-11-01: Android 0.3.6 build 27 release candidate
+
+- Restores assistant startup and makes public free-credit access visible; Android hardware verification and voluntary diagnostics privacy copy updated.
+- Signed APK: 82,175,814 bytes; SHA-256 `507582ff0da72b594aae8a4832b6f66c19a6d3b8cee560d3e52419664e9ef581`; certificate matches previous official APK.
+- App 194 unit + 185 RN tests and backend 131 tests passed. Fixed benchmark 120/120 x 3; live 60/60. Nine fixed timing warnings remain in the original report; paired tests against the previous release showed overlapping ranges and a maximum median increase of 0.426ms. Physical-device acceptance and remaining sample-level human review are pending. Do not describe this candidate as physically tested.
+- Owner explicitly approved this 0.3.6 beta on 2026-11-01: 本次先发布测试版，验收和审核后补. This defers physical-device and remaining sample review for this beta and retains investigated warnings; it does not mark the normal gate passed or extend the previous 0.3.5 waiver.
