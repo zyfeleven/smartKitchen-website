@@ -16,7 +16,7 @@ const english = {
   heroCta: "Try the Android beta",
   heroDemo: "See how Mise helps",
   heroNote:
-    "Android beta available. Manual tools are free to use; AI features need an invite code.",
+    "Android beta available. Supported devices can claim the server’s free AI allowance without an invite. Manual tools remain free.",
   demoLabel: "TRY AN EXAMPLE",
   demoCaption: "Interactive demo · not live AI",
   agentSubtitle: "A small plan for tonight.",
@@ -94,13 +94,13 @@ const english = {
   faq1Question: "What can the agent do now?",
   faq1Answer:
     "Mise can check stock, create or edit recipes, plan meals and prepare shopping lists. Inspect action records and undo supported changes. Keep the app in the foreground while tasks run; interrupted tasks can resume. Nutrition values are estimates, not a full-day assessment. This website demo uses sample data and makes no AI calls.",
-  faq2Question: "How do I get an invite code?",
+  faq2Question: "Do I need an invite code?",
   faq2Answer:
-    "The maintainer is inviting a small group of testers. Downloading the APK doesn't provide an invite code. Contact the maintainer through the project feedback page to ask about the beta.",
+    "No invite is needed to claim the free allowance on a supported device. Check the offer and remaining credits in the app. Existing invitations still work; contact the maintainer if device verification fails.",
   feedbackLink: "Project feedback ↗",
   faq3Question: "Does the beta cost anything?",
   faq3Answer:
-    "There is no top-up or payment flow currently. AI features use beta credits. The initial allowance and expiry depend on your invite; check the invitation and your balance in the app. Points are deducted according to the feature rules when it succeeds. Contact the maintainer if you run out; manual features remain available.",
+    "There is no top-up or payment flow. The server controls the free allowance; check the current offer and your remaining balance in the app. Updating does not grant it again. Successful AI operations use credits according to the displayed rules; manual tools remain available.",
   faq4Question: "Can I restore my kitchen on another phone?",
   faq4Answer:
     "Export a local backup in Settings and transfer the file to another phone to restore it. Files are unencrypted; keep them private. Restoring replaces data on the destination phone. Invite codes and AI credits are excluded. Accounts and automatic cloud sync are not available yet.",
@@ -110,11 +110,11 @@ const english = {
   downloadEyebrow: "GET STARTED",
   downloadTitle: "Make the next meal\na little easier.",
   downloadCopy:
-    "Download the Android beta and start with the ingredients at home. Enter an invite code when you want AI assistance. Install updates over the existing app to keep your data.",
+    "Download the Android beta and claim the available free AI allowance in the app, without an invitation. Install updates over the existing app to keep your data and identity.",
   androidBeta: "ANDROID BETA",
   downloadApk: "Download Android APK",
   releaseDetails: "Read the release notes ↗",
-  inviteRequired: "Invite required for AI",
+  inviteRequired: "Free AI allowance in app",
   iosStatus: "No public iPhone download yet",
   footerCopy: "Good food. A little less kitchen friction.",
   footerFeedback: "Feedback ↗",
@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "A compact assistant chat with editable drafts while paused, improved recipe/menu decisions and quantity handling, request references in voluntary feedback, and local cooking reminders. Android AI retains existing invitation access; install over the existing app to keep local data.",
+  en: "Fixes an assistant startup failure. Claim and view free AI credits without an invitation, and restore an existing free-credit identity after removing one. Supported Android devices can claim after system verification. Voluntary reports include precise failure stages. Install over the existing app to retain local data; updating does not repeat a credit grant.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>

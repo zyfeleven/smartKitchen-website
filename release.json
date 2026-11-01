@@ -1,12 +1,12 @@
 {
-  "version": "0.3.5",
-  "build": 26,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.3.5-build26/mise-v0.3.5-build26.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.3.5-build26",
-  "sizeBytes": 82160322,
-  "sha256": "452d09cf3775c67c4e4f8709a4bd5055747a0fef7738b7b329b749d425239eb0",
+  "version": "0.3.6",
+  "build": 27,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.3.6-build27/mise-v0.3.6-build27.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.3.6-build27",
+  "sizeBytes": 82175814,
+  "sha256": "507582ff0da72b594aae8a4832b6f66c19a6d3b8cee560d3e52419664e9ef581",
   "releaseNotes": {
-    "zh": "助手对话更简洁，暂停时可编辑下一条消息；改进菜谱、菜单和食材数量处理。主动反馈时附带请求编号，方便定位失败原因。支持本地做饭提醒。Android AI 沿用现有邀请码；覆盖安装保留本地数据。",
-    "en": "A compact assistant chat with editable drafts while paused, improved recipe/menu decisions and quantity handling, request references in voluntary feedback, and local cooking reminders. Android AI retains existing invitation access; install over the existing app to keep local data."
+    "zh": "修复助手启动后立即暂停的问题。无需邀请码即可申请、查看免费 AI 点数；移除邀请码后恢复原有免费额度。支持的 Android 设备可完成系统校验后领取。主动反馈时附带具体失败阶段。覆盖安装保留本地数据，更新不会重复赠送点数。",
+    "en": "Fixes an assistant startup failure. Claim and view free AI credits without an invitation, and restore an existing free-credit identity after removing one. Supported Android devices can claim after system verification. Voluntary reports include precise failure stages. Install over the existing app to retain local data; updating does not repeat a credit grant."
   }
 }
