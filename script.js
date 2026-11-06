@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Fixes an assistant startup failure. Claim and view free AI credits without an invitation, and restore an existing free-credit identity after removing one. Supported Android devices can claim after system verification. Voluntary reports include precise failure stages. Install over the existing app to retain local data; updating does not repeat a credit grant.",
+  en: "AI credits follow actual usage: 10,000 tokens per credit, with history grouped by conversation. Improves recipe portions and gives retries corrective context. Free credits remain available without an invitation under the existing policy. Install over the existing app to retain local data; updating does not repeat a credit grant.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
