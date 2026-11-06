@@ -157,3 +157,9 @@ Token-based credits,conversation usage,latest recipe portions and corrected retr
 Server backup/restore-copy rehearsal completed before authorized backend promotion.
 Physical-device and remaining sample human review are still pending; do not publish
 this website/asset until that current-release gate is satisfied or explicitly waived.
+
+Owner approved this0.3.7beta on2026-11-06: 本次先发测试版，验收和审核后补.
+This explicitly defers current physical-device and remaining sample review and
+accepts the disclosed post-test CI/docs/deployment-script source differences.
+It does not assert a normal release-gate pass or create a permanent waiver.
+Android verified asset is now public; publish the matching website metadata.
