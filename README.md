@@ -148,3 +148,12 @@ Physical iOS/Android acceptance remains pending; automated results do not replac
 - Signed APK: 82,175,814 bytes; SHA-256 `507582ff0da72b594aae8a4832b6f66c19a6d3b8cee560d3e52419664e9ef581`; certificate matches previous official APK.
 - App 194 unit + 185 RN tests and backend 131 tests passed. Fixed benchmark 120/120 x 3; live 60/60. Nine fixed timing warnings remain in the original report; paired tests against the previous release showed overlapping ranges and a maximum median increase of 0.426ms. Physical-device acceptance and remaining sample-level human review are pending. Do not describe this candidate as physically tested.
 - Owner explicitly approved this 0.3.6 beta on 2026-11-01: 本次先发布测试版，验收和审核后补. This defers physical-device and remaining sample review for this beta and retains investigated warnings; it does not mark the normal gate passed or extend the previous 0.3.5 waiver.
+
+## 2026-11-06: Android0.3.7 build28 candidate
+
+Verified signedAPK82,198,614bytes,sha256b1c29743463fe236d0b993f3ec2b4d053e1b09612ed012707fb5977e35c5d568.
+Update both download links,manifest,andChinese/English fallback notes together.
+Token-based credits,conversation usage,latest recipe portions and corrected retries.
+Server backup/restore-copy rehearsal completed before authorized backend promotion.
+Physical-device and remaining sample human review are still pending; do not publish
+this website/asset until that current-release gate is satisfied or explicitly waived.
