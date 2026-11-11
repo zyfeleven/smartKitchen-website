@@ -229,3 +229,12 @@ they do not claim every viewport, physical-device coverage or public downloads.
 Android publication and anonymous full-file hash verification must complete
 before merging this website. Store privacy labels remain separately reviewed;
 website policy publication does not itself update store declarations.
+
+
+Android publication follow-up: release441352734 is now a public prerelease. An
+anonymous complete download of asset734581851 verified85,856,809bytes and the
+exact SHA-256 above. The website may now merge via PR31 under the current owner
+approval. Final acceptance still requires the resulting GitHub Pages deployment
+and public manifest, both download links, bilingual notes and privacy content
+to match this source. Physical-device and remaining human review are deferred,
+not completed. No additional email or model call was made for website publication.
