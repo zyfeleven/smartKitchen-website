@@ -77,8 +77,8 @@ const english = {
   phaseCurrentCopy: "Kitchen home, weekly menus, AI help, action history and local backups",
   phaseNext: "BEING REFINED",
   phaseNextCopy: "More natural conversations and more reliable complex tasks",
-  phaseLater: "UP NEXT",
-  phaseLaterCopy: "Accounts and automatic cloud sync",
+  phaseLater: "NEW IN 0.4.0",
+  phaseLaterCopy: "Email accounts and opt-in cross-device sync",
   trustEyebrow: "USEFUL HELP. CLEAR EXPECTATIONS.",
   trustTitle: "Know what's happening\nat every step.",
   trust1Title: "Review the important changes.",
@@ -86,7 +86,7 @@ const english = {
     "Review before saving and inspect the result afterwards. Manual stock entries, edits, deletion, shopping, menus and cooking have action history and undo. The app explains when later changes prevent a safe undo.",
   trust2Title: "Local records. On-demand AI.",
   trust2Copy:
-    "Core inventory and recipe records live on your phone. When you use AI, relevant text, images, or ingredient information is sent to the server and model service for processing.",
+    "Kitchen records stay on your phone unless you enable account sync in a supported version. Using AI sends relevant text, images and kitchen information to the server and model service.",
   trust3Title: "Usage you can account for.",
   trust3Copy:
     "View AI credits and usage in the app. Multi-step tasks can make several AI calls; undoing saved changes does not refund credits already used. The server records usage and briefly caches results for retries.",
@@ -103,7 +103,7 @@ const english = {
     "There is no top-up or payment flow. The server controls the free allowance; check the current offer and your remaining balance in the app. Updating does not grant it again. Successful AI operations use credits according to the displayed rules; manual tools remain available.",
   faq4Question: "Can I restore my kitchen on another phone?",
   faq4Answer:
-    "Export a local backup in Settings and transfer the file to another phone to restore it. Files are unencrypted; keep them private. Restoring replaces data on the destination phone. Invite codes and AI credits are excluded. Accounts and automatic cloud sync are not available yet.",
+    "In 0.4.0 and supported versions, sign in with an email code and separately enable sync to use your account kitchen on another device. Importing guest data is explicit; you choose how to resolve conflicts. Logout or pausing sync does not erase existing copies. Manual backups remain available: files are unencrypted, restoring replaces local records, and login credentials and AI credits are excluded.",
   faq5Question: "Is there an iPhone version?",
   faq5Answer:
     "This page currently offers the Android beta APK. There is no public iOS download yet. We'll update this page when one is available.",
@@ -242,7 +242,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "AI credits follow actual usage: 10,000 tokens per credit, with history grouped by conversation. Improves recipe portions and gives retries corrective context. Free credits remain available without an invitation under the existing policy. Install over the existing app to retain local data; updating does not repeat a credit grant.",
+  en: "Adds email-code accounts with opt-in cross-device sync for inventory, recipes, photos, conversations and unfinished tasks. Logout and account deletion are separate, with explicit conflict resolution. Fixes Chinese recipe-unit display and adds compatible over-the-air update support. Install over the existing app; guest data is retained and can be explicitly imported. Login does not repeat the free-credit grant.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>

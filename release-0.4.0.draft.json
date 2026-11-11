@@ -1,0 +1,23 @@
+{
+  "status": "candidate_artifact_verified_not_public",
+  "version": "0.4.0",
+  "build": 29,
+  "iosBuild": 24,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.4.0-build29/mise-v0.4.0-build29.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.4.0-build29",
+  "sizeBytes": 85856809,
+  "sha256": "6d7ad057ac38b3f42f8a0a9efaf4298fc8a376db7670d95df52aa5af16d317ad",
+  "releaseNotes": {
+    "zh": "新增邮箱验证码账号，可主动开启库存、菜谱、照片、对话及未完成任务的跨设备同步。退出登录与删除账号分开处理，冲突可由用户选择。修复助手菜谱的中文单位显示，加入兼容版本的热更新基础。请覆盖安装，原访客数据保留并可主动导入；登录不会重复赠送免费点数。",
+    "en": "Adds email-code accounts with opt-in cross-device sync for inventory, recipes, photos, conversations and unfinished tasks. Logout and account deletion are separate, with explicit conflict resolution. Fixes Chinese recipe-unit display and adds compatible over-the-air update support. Install over the existing app; guest data is retained and can be explicitly imported. Login does not repeat the free-credit grant."
+  },
+  "publicationPrerequisites": [
+    "Satisfy current release gate or record an explicit current-release owner exception.",
+    "Confirm account backend and actual email-code login are working.",
+    "Publish the verified GitHub draft asset and verify its anonymous download digest.",
+    "Only then publish these matched website manifest/static/fallback changes."
+  ],
+  "githubReleaseId": 441352734,
+  "githubAssetId": 734581851,
+  "publicDownloadVerified": false
+}
