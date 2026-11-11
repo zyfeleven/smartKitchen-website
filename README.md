@@ -163,3 +163,78 @@ This explicitly defers current physical-device and remaining sample review and
 accepts the disclosed post-test CI/docs/deployment-script source differences.
 It does not assert a normal release-gate pass or create a permanent waiver.
 Android verified asset is now public; publish the matching website metadata.
+
+
+## 2026-11-11: 0.4.0 website and privacy draft (not published)
+
+Prepared in a separate `codex/accounts-040-site` worktree. This local candidate now
+sets `release.json`, both APK links, static metadata and bilingual fallback notes
+to the verified Android0.4.0 build29 artifact: 85,856,809 bytes, SHA-256
+`6d7ad057ac38b3f42f8a0a9efaf4298fc8a376db7670d95df52aa5af16d317ad`.
+GitHub draft release441352734 (`android-v0.4.0-build29`), asset734581851, remains
+unpublished. `release-0.4.0.draft.json` records candidate status and is not loaded
+by the page. Anonymous download verification has not occurred. No push or website
+publication is recorded here; the currently public website still serves0.3.7.
+
+Before publishing: satisfy the current0.4.0 release gate or obtain its explicit
+owner exception, verify actual account/email service behavior, publish the matched
+GitHub asset and verify an anonymous download against the digest above, then
+publish this website candidate. A prior0.3.7 exception does not cover0.4.0.
+
+The privacy/support/homepage draft removes no-account/no-sync claims, explains
+explicit sync including full conversations/photos, separate guest kitchens,
+recovery copies and local logout versus account deletion. Account deletion keeps
+existing AI billing/security records and separately submitted diagnostics under
+their own retention rules; it must not be advertised as deleting every service record.
+Other devices' offline copies, OS backups and exports are not remotely erased.
+
+The new update-service paragraph reflects Expo's November5,2026 disclosure:
+https://docs.expo.dev/eas-update/store-privacy-declarations/ and https://expo.dev/privacy .
+Store privacy declarations need an independent release review for email/account
+identifiers, synced user content/photos and Expo installation/launch-error data.
+Website edits do not modify App Store or Play declarations. The actual mail provider
+name (currently QQ SMTP), backend region and service availability must be rechecked
+at deployment before publishing this draft. Native privacy/runtime acceptance
+and actual application OTP delivery remain separate evidence.
+
+Candidate local checks: JavaScript syntax, git whitespace/diff, HTML local links
+and anchors, bilingual keys, both APK buttons, version/size text and the two
+release-note fallback paths match the verified candidate manifest. No browser or
+physical-device acceptance is claimed by these checks; no browser was operated
+while the server Workbench was in use. App Store privacy-label review is separate.
+
+
+## 2026-11-11: 0.4.0 beta approval and production email evidence
+
+The owner explicitly authorized this0.4.0 test release with physical iOS/Android
+acceptance and remaining human dataset review deferred. The approval question
+also disclosed the old performance baseline as incomparable. This is a release-
+specific exception, not a normal gate pass, completed physical testing or a
+permanent waiver. Fixed120/120x3 and live86/86 pass; the original baseline remains.
+
+Production backend04a56b8 has accounts and email enabled. One authorized real
+email-code request was delivered through QQ and verified through the actual
+AccountClient over production HTTPS. Wrong-code rejection, same-operation replay,
+session restore, refresh and logout/revocation passed. No credits were granted
+and no kitchen data was imported. This used a memory-only session adapter,
+not a physical iOS/Android install. The email arrived in about78seconds; this
+single successful sample is not a delivery-time guarantee.
+
+Browser review by the release operator checked the Chinese download area and
+privacy page at390x844 with no horizontal overflow, plus the English desktop
+homepage and manifest/DOM consistency. APK links were not clicked while the
+release was private. These checks supplement the candidate's static validation;
+they do not claim every viewport, physical-device coverage or public downloads.
+
+Android publication and anonymous full-file hash verification must complete
+before merging this website. Store privacy labels remain separately reviewed;
+website policy publication does not itself update store declarations.
+
+
+Android publication follow-up: release441352734 is now a public prerelease. An
+anonymous complete download of asset734581851 verified85,856,809bytes and the
+exact SHA-256 above. The website may now merge via PR31 under the current owner
+approval. Final acceptance still requires the resulting GitHub Pages deployment
+and public manifest, both download links, bilingual notes and privacy content
+to match this source. Physical-device and remaining human review are deferred,
+not completed. No additional email or model call was made for website publication.

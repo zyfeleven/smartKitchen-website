@@ -1,12 +1,12 @@
 {
-  "version": "0.3.7",
-  "build": 28,
-  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.3.7-build28/mise-v0.3.7-build28.apk",
-  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.3.7-build28",
-  "sizeBytes": 82198614,
-  "sha256": "b1c29743463fe236d0b993f3ec2b4d053e1b09612ed012707fb5977e35c5d568",
+  "version": "0.4.0",
+  "build": 29,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.4.0-build29/mise-v0.4.0-build29.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.4.0-build29",
+  "sizeBytes": 85856809,
+  "sha256": "6d7ad057ac38b3f42f8a0a9efaf4298fc8a376db7670d95df52aa5af16d317ad",
   "releaseNotes": {
-    "zh": "AI 点数按实际用量结算，每 1 万 token 为 1 点，记录按对话汇总。改进菜谱人数与份量处理，失败重试会根据原因纠正。无需邀请码即可按现有政策领取免费额度。覆盖安装保留本地数据，更新不会重复赠送点数。",
-    "en": "AI credits follow actual usage: 10,000 tokens per credit, with history grouped by conversation. Improves recipe portions and gives retries corrective context. Free credits remain available without an invitation under the existing policy. Install over the existing app to retain local data; updating does not repeat a credit grant."
+    "zh": "新增邮箱验证码账号，可主动开启库存、菜谱、照片、对话及未完成任务的跨设备同步。退出登录与删除账号分开处理，冲突可由用户选择。修复助手菜谱的中文单位显示，加入兼容版本的热更新基础。请覆盖安装，原访客数据保留并可主动导入；登录不会重复赠送免费点数。",
+    "en": "Adds email-code accounts with opt-in cross-device sync for inventory, recipes, photos, conversations and unfinished tasks. Logout and account deletion are separate, with explicit conflict resolution. Fixes Chinese recipe-unit display and adds compatible over-the-air update support. Install over the existing app; guest data is retained and can be explicitly imported. Login does not repeat the free-credit grant."
   }
 }

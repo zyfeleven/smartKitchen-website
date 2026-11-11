@@ -1,0 +1,48 @@
+{
+  "status": "public_beta_artifact_verified",
+  "version": "0.4.0",
+  "build": 29,
+  "iosBuild": 24,
+  "apkUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/download/android-v0.4.0-build29/mise-v0.4.0-build29.apk",
+  "releaseUrl": "https://github.com/zyfeleven/smartKitchen-website/releases/tag/android-v0.4.0-build29",
+  "sizeBytes": 85856809,
+  "sha256": "6d7ad057ac38b3f42f8a0a9efaf4298fc8a376db7670d95df52aa5af16d317ad",
+  "releaseNotes": {
+    "zh": "新增邮箱验证码账号，可主动开启库存、菜谱、照片、对话及未完成任务的跨设备同步。退出登录与删除账号分开处理，冲突可由用户选择。修复助手菜谱的中文单位显示，加入兼容版本的热更新基础。请覆盖安装，原访客数据保留并可主动导入；登录不会重复赠送免费点数。",
+    "en": "Adds email-code accounts with opt-in cross-device sync for inventory, recipes, photos, conversations and unfinished tasks. Logout and account deletion are separate, with explicit conflict resolution. Fixes Chinese recipe-unit display and adds compatible over-the-air update support. Install over the existing app; guest data is retained and can be explicitly imported. Login does not repeat the free-credit grant."
+  },
+  "publicationPrerequisites": [
+    "Merge PR31 and verify the GitHub Pages deployment serves the matching manifest, download links, bilingual notes and privacy policy."
+  ],
+  "githubReleaseId": 441352734,
+  "githubAssetId": 734581851,
+  "publicDownloadVerified": true,
+  "ownerException": {
+    "release": "0.4.0",
+    "approvedDate": "2026-11-11",
+    "scope": [
+      "physical_ios_android_acceptance_deferred",
+      "remaining_human_dataset_review_deferred",
+      "incomparable_historical_performance_baseline_disclosed"
+    ],
+    "normalGatePassed": false,
+    "permanentWaiver": false
+  },
+  "productionAccounts": {
+    "revision": "04a56b8e56baa8de87a0aed4c8f455e2d8328347",
+    "accountsEnabled": true,
+    "emailEnabled": true,
+    "realEmailCodeRequests": 1,
+    "realEmailDeliveredAndVerified": true,
+    "accountClientReplayRestoreRefreshLogoutPassed": true,
+    "physicalDevice": false
+  },
+  "browserReview": {
+    "chineseMobileViewport": "390x844",
+    "downloadAndPrivacyNoHorizontalOverflow": true,
+    "englishDesktopHomeAndManifestMatch": true,
+    "publicApkClicked": false
+  },
+  "publicDownloadVerificationObservedAt": "2026-11-11T12:27:07.164016+00:00",
+  "websitePullRequest": "https://github.com/zyfeleven/smartKitchen-website/pull/31"
+}
