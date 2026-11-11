@@ -252,10 +252,15 @@ explains salted scrypt password storage, HTTPS verification, no plaintext passwo
 persistence/logging, two-minute encrypted retry receipts and 24-hour login-limit
 records, and the revocation of all earlier sessions after password changes. Codes
 are for email ownership/recovery and sensitive operations in the new interface.
-It explicitly warns that the original Android APK has no password UI and must not
-be advertised as having received the iOS-targeted update. Existing account/guest
-isolation, opt-in sync, deletion limits and contact details are preserved.
+It explains compatible password updates for both iOS 0.4.0 (24) and Android
+0.4.0 (29): their original binaries remain code-only, online startup downloads
+a published matching update, and a later full restart activates the download.
+Published updates must not be described as already activated on any device.
+Existing account/guest isolation, opt-in sync, deletion limits and contact details
+are preserved.
 
 Source review: app AccountClient/password forms and backend accounts/passwords,
-service, schema and HTTP handlers. Final server rollout, iOS OTA/runtime check,
-visual acceptance and root approval remain separate; no publication is claimed.
+service, schema and HTTP handlers. Final server rollout, both platform OTA/runtime
+checks and actual device activation remain separate evidence; no publication or
+device activation is claimed by this website candidate. The owner has requested
+both compatible beta updates; root coordinates their release independently.
