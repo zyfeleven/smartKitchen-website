@@ -103,7 +103,7 @@ const english = {
     "There is no top-up or payment flow. The server controls the free allowance; check the current offer and your remaining balance in the app. Updating does not grant it again. Successful AI operations use credits according to the displayed rules; manual tools remain available.",
   faq4Question: "Can I restore my kitchen on another phone?",
   faq4Answer:
-    "In 0.4.0 and supported versions, sign in with an email code and separately enable sync to use your account kitchen on another device. Importing guest data is explicit; you choose how to resolve conflicts. Logout or pausing sync does not erase existing copies. Manual backups remain available: files are unencrypted, restoring replaces local records, and login credentials and AI credits are excluded.",
+    "In supported versions, sign in to your email account and separately enable sync to use your kitchen on another device. The login method depends on the update actually running. iOS and Android 0.4.0 can download published compatible fixes after an online launch; fully close and reopen the app after the download to activate them. Before setting a password, check that your other devices also show password sign-in. Importing guest data is explicit; you choose how to resolve conflicts. Logout or pausing sync does not erase existing copies. Manual backups remain available: files are unencrypted, restoring replaces local records, and login credentials and AI credits are excluded.",
   faq5Question: "Is there an iPhone version?",
   faq5Answer:
     "This page currently offers the Android beta APK. There is no public iOS download yet. We'll update this page when one is available.",
