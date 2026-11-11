@@ -238,3 +238,24 @@ approval. Final acceptance still requires the resulting GitHub Pages deployment
 and public manifest, both download links, bilingual notes and privacy content
 to match this source. Physical-device and remaining human review are deferred,
 not completed. No additional email or model call was made for website publication.
+
+
+## 2026-11-11: Password-account privacy candidate (not published)
+
+Prepared on `codex/password-accounts-privacy`, based on the published 0.4.0 site.
+Only privacy/support and the bilingual account-sync FAQ are updated; APK metadata,
+release notes and artifacts remain the actual Android 0.4.0 (29) release. The
+original `codex/accounts-040-site` branch is retained.
+
+The candidate distinguishes updates with password support from code-only binaries,
+explains salted scrypt password storage, HTTPS verification, no plaintext password
+persistence/logging, two-minute encrypted retry receipts and 24-hour login-limit
+records, and the revocation of all earlier sessions after password changes. Codes
+are for email ownership/recovery and sensitive operations in the new interface.
+It explicitly warns that the original Android APK has no password UI and must not
+be advertised as having received the iOS-targeted update. Existing account/guest
+isolation, opt-in sync, deletion limits and contact details are preserved.
+
+Source review: app AccountClient/password forms and backend accounts/passwords,
+service, schema and HTTP handlers. Final server rollout, iOS OTA/runtime check,
+visual acceptance and root approval remain separate; no publication is claimed.
