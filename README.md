@@ -202,3 +202,30 @@ and anchors, bilingual keys, both APK buttons, version/size text and the two
 release-note fallback paths match the verified candidate manifest. No browser or
 physical-device acceptance is claimed by these checks; no browser was operated
 while the server Workbench was in use. App Store privacy-label review is separate.
+
+
+## 2026-11-11: 0.4.0 beta approval and production email evidence
+
+The owner explicitly authorized this0.4.0 test release with physical iOS/Android
+acceptance and remaining human dataset review deferred. The approval question
+also disclosed the old performance baseline as incomparable. This is a release-
+specific exception, not a normal gate pass, completed physical testing or a
+permanent waiver. Fixed120/120x3 and live86/86 pass; the original baseline remains.
+
+Production backend04a56b8 has accounts and email enabled. One authorized real
+email-code request was delivered through QQ and verified through the actual
+AccountClient over production HTTPS. Wrong-code rejection, same-operation replay,
+session restore, refresh and logout/revocation passed. No credits were granted
+and no kitchen data was imported. This used a memory-only session adapter,
+not a physical iOS/Android install. The email arrived in about78seconds; this
+single successful sample is not a delivery-time guarantee.
+
+Browser review by the release operator checked the Chinese download area and
+privacy page at390x844 with no horizontal overflow, plus the English desktop
+homepage and manifest/DOM consistency. APK links were not clicked while the
+release was private. These checks supplement the candidate's static validation;
+they do not claim every viewport, physical-device coverage or public downloads.
+
+Android publication and anonymous full-file hash verification must complete
+before merging this website. Store privacy labels remain separately reviewed;
+website policy publication does not itself update store declarations.
