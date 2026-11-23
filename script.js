@@ -77,8 +77,8 @@ const english = {
   phaseCurrentCopy: "Kitchen home, weekly menus, AI help, action history and local backups",
   phaseNext: "BEING REFINED",
   phaseNextCopy: "More natural conversations and more reliable complex tasks",
-  phaseLater: "NEW IN 0.4.0",
-  phaseLaterCopy: "Email accounts and opt-in cross-device sync",
+  phaseLater: "NEW IN 0.4.1",
+  phaseLaterCopy: "Personal credits, offline sync and visible update downloads",
   trustEyebrow: "USEFUL HELP. CLEAR EXPECTATIONS.",
   trustTitle: "Know what's happening\nat every step.",
   trust1Title: "Review the important changes.",
@@ -96,17 +96,19 @@ const english = {
     "Mise can check stock, create or edit recipes, plan meals and prepare shopping lists. Inspect action records and undo supported changes. Keep the app in the foreground while tasks run; interrupted tasks can resume. Nutrition values are estimates, not a full-day assessment. This website demo uses sample data and makes no AI calls.",
   faq2Question: "Do I need an invite code?",
   faq2Answer:
-    "No invite is needed to claim the free allowance on a supported device. Check the offer and remaining credits in the app. Existing invitations still work; contact the maintainer if device verification fails.",
+    "Verified email accounts can receive personal AI credits. Eligible users can claim a one-time allowance in the app. Existing invitation balances remain shared among their original members.",
   feedbackLink: "Project feedback ↗",
   faq3Question: "Does the beta cost anything?",
   faq3Answer:
     "There is no top-up or payment flow. The server controls the free allowance; check the current offer and your remaining balance in the app. Updating does not grant it again. Successful AI operations use credits according to the displayed rules; manual tools remain available.",
   faq4Question: "Can I restore my kitchen on another phone?",
   faq4Answer:
-    "In supported versions, sign in to your email account and separately enable sync to use your kitchen on another device. The login method depends on the update actually running. iOS and Android 0.4.0 can download published compatible fixes after an online launch; fully close and reopen the app after the download to activate them. Before setting a password, check that your other devices also show password sign-in. Importing guest data is explicit; you choose how to resolve conflicts. Logout or pausing sync does not erase existing copies. Manual backups remain available: files are unencrypted, restoring replaces local records, and login credentials and AI credits are excluded.",
+    "Sign in with the same email and enable account sync to access inventory, recipes and assistant tasks on another device. Offline edits stay on your phone and upload when you return to the app online. If both devices made competing changes, you choose which version to keep. Signing out or pausing sync retains existing copies.",
+  faqUpdateQuestion: "How do I download an update?",
+  faqUpdateAnswer: "In 0.4.1, open the app or check for updates in Settings. When a compatible update is available, you can see its estimated size and choose to download now or later. During download you can see the bytes received and the speed when available. Save your edits and tap Restart to apply it. Install the new binary when upgrading from 0.4.0. On Android, install over the existing app.",
   faq5Question: "Is there an iPhone version?",
   faq5Answer:
-    "This page currently offers the Android beta APK. There is no public iOS download yet. We'll update this page when one is available.",
+    "Enrolled iPhone testers can check TestFlight for available builds. This page provides the Android installer.",
   downloadEyebrow: "GET STARTED",
   downloadTitle: "Make the next meal\na little easier.",
   downloadCopy:
@@ -242,7 +244,7 @@ let confirmed = false;
 let release = null;
 const fallbackReleaseNotes = {
   zh: document.querySelector("[data-release-note]").textContent,
-  en: "Adds email-code accounts with opt-in cross-device sync for inventory, recipes, photos, conversations and unfinished tasks. Logout and account deletion are separate, with explicit conflict resolution. Fixes Chinese recipe-unit display and adds compatible over-the-air update support. Install over the existing app; guest data is retained and can be explicitly imported. Login does not repeat the free-credit grant.",
+  en: "See when an update is available, its estimated download size, progress and speed. Verified email accounts can receive personal AI credits. Existing invitations keep their shared balances. With sync enabled, offline edits upload when you return to the app online. Install over your existing Android app to keep local data.",
 };
 const $ = (id) => document.getElementById(id);
 const t = (key) =>
